@@ -13,6 +13,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
   getResult()
 }))
 
+
 function generateComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3) + 1 // or you can use possibleChoices.length
   
