@@ -28,7 +28,6 @@ function generateComputerChoice() {
   computerChoiceDisplay.innerHTML = computerChoice
 }
 
-
 function getResult() {
   if (computerChoice === userChoice) {
     result = 'its a draw!'
