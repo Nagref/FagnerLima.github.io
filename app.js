@@ -1,17 +1,15 @@
-var messageBox = document.querySelector('.js-message');
-  var btn = document.querySelector('.js-message-btn');
-  var card = document.querySelector('.js-profile-card');
-  var closeBtn = document.querySelectorAll('.js-message-close');
-
-  btn.addEventListener('click',function (e) {
-      e.preventDefault();
-      card.classList.add('active');
+(function($){
+  // variables
+  elementWidth = $('ul').width(),
+  containerWidth = $('nav').width(),
+  difference = elementWidth-containerWidth,
+  finalWidth = difference * 1.5,
+  element = $('ul');
+  
+  // active on click
+  $('li').on('click', function(){
+    $('li').removeClass('active');
+    $(this).addClass('active');
   });
-
-  closeBtn.forEach(function (element, index) {
-     console.log(element);
-      element.addEventListener('click',function (e) {
-          e.preventDefault();
-          card.classList.remove('active');
-      });
-  });
+  
+})(jQuery);
