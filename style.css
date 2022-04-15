@@ -4,19 +4,21 @@ a {
 }
 
 .title {
-  color: #efefef;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-align: absolute;
+  color: #F8F8F2;
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center-align;
   font-family: "JetBrains Mono";
+  padding-left: 10px;
+  margin-left: 10px;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "JetBrains Mono Regular", "Fira Code Regular", Menlo, monospace;
+  font-family: "JetBrains Mono Regular", Menlo, monospace;
   font-size: 16px;
-  background-color: #22212C
+  background-color: #0B0D0F
 }
 
 ::selection {
@@ -55,15 +57,16 @@ nav li {
   transition: background-color 0.5s 0.2s ease, color 0.3s ease;
   cursor: pointer;
   font-size: 12px;
+  font-family: "JetBrains Mono Regular";
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-weight: 800;
+  font-weight: 600;
   transform: translateY(100%);
 }
 
 nav li.active {
   background-color: #151515;
-  color: #efefef;
+  color: #F8F8F2;
 }
 
 nav li.active::after {
@@ -105,7 +108,7 @@ nav li:nth-child(7) {
 }
 
 nav li:hover {
-  color: #7970A9;
+  color: #8AFF80;
 }
 
 nav li:active {
@@ -144,7 +147,7 @@ nav li.slide {
   position: absolute;
   left: -20vw;
   top: 0;
-  background-color: #7970A9;
+  background-color: #80FFEA;
   z-index: -1;
   height: 2px;
   margin-top: 98px;
@@ -171,7 +174,7 @@ section .title {
 section .title span {
   display: inline-block;
   font-size: 5vw;
-  color: #efefef;
+  color: #F8F8F2;
   width: 100%;
   text-transform: uppercase;
   transform: translateX(-100%);
