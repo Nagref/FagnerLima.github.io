@@ -6,6 +6,7 @@
     finalWidth = difference * 1.5,
     element = $('ul');
 
+
   // active on click
   $('li').on('click', function () {
     $('li').removeClass('active');
