@@ -106,6 +106,7 @@ nav li:nth-child(6) {
 nav li:nth-child(7) {
   animation: pop 0.5s 1.05s 1 forwards;
 }
+
 /* buttoon */
 nav li:hover {
   color: #9580FF;
@@ -142,6 +143,7 @@ nav li:nth-child(6):hover~.slide {
 nav li:nth-child(7):hover~.slide {
   left: 120vw;
 }
+
 /* Barra de seleção */
 nav li.slide {
   position: absolute;
