@@ -66,9 +66,11 @@ nav ul {
 nav button {
   border-right: #9580FF;
   margin: 0;
+  margin-left: 10px;
   display: inline-block;
   padding: 0;
   margin-bottom: 0;
+  margin-top: 10px;
   line-height: 50px;
   width: 100px;
   text-align: center;
@@ -170,21 +172,21 @@ nav button:nth-child(7):hover~.slide {
 
 section {
   background-color: #000000;
-  height: 100vh;
+  height: 110vh;
   display: flex;
 }
 
-section .title {
-  max-width: 60%;
+section .flex-container {
+  max-width: 50%;
   width: 100%;
   align-self: center;
   transform: translateY(-50px);
   margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 
-section .title h3 {
+section .flex-container h3 {
   display: inline-block;
   font-size: 1rem;
   color: #FFF;
@@ -196,12 +198,12 @@ section .title h3 {
   letter-spacing: 1px;
 }
 
-section .title h3:last-child {
+section .flex-container h3:last-child {
   font-size: 1rem;
   animation: byBottom 1s 0.25s ease both;
 }
 
-section .title h3 a {
+section .flex-container h3 a {
   position: relative;
   display: inline-block;
   margin-left: 0.5rem;
@@ -209,7 +211,7 @@ section .title h3 a {
   color: #9580FF;
 }
 
-section .title h3 a::after {
+section .flex-container h3 a::after {
   content: "";
   height: 2px;
   background-color: #80FFEA;
