@@ -40,6 +40,7 @@ button {
   font-size: 1em;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
+
 nav {
   width: 100%;
   position: fixed;
@@ -178,7 +179,7 @@ section .title {
   padding-bottom: 10px;
 }
 
-section .title h2 {
+section .title h3 {
   display: inline-block;
   font-size: 1rem;
   color: #FFF;
@@ -186,16 +187,16 @@ section .title h2 {
   text-transform: uppercase;
   transform: translateX(-100%);
   animation: byBottom 1s ease both;
-  font-weight: 600;
-  letter-spacing: 0.25vw;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
-section .title h2:last-child {
+section .title h3:last-child {
   font-size: 1rem;
   animation: byBottom 1s 0.25s ease both;
 }
 
-section .title h2 a {
+section .title h3 a {
   position: relative;
   display: inline-block;
   margin-left: 0.5rem;
@@ -203,7 +204,7 @@ section .title h2 a {
   color: #9580FF;
 }
 
-section .title h2 a::after {
+section .title h3 a::after {
   content: "";
   height: 2px;
   background-color: #80FFEA;
