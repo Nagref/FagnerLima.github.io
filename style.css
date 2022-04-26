@@ -3,22 +3,10 @@ a {
   text-decoration: inherit;
 }
 
-.title {
-  color: #F8F8F2;
-  font-size: 14px;
-  font-weight: bolder;
-  text-align: center-align;
-  font-family: "JetBrains Mono Regular", "Fira Code", "DejaVu Sans Mono", "Droid Sans Mono", "Lucida Console", "Courier New", monospace;
-  padding-left: 10px;
-  margin-left: 10px;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: "JetBrains Mono Regular", "Fira Code", "DejaVu Sans Mono", "Droid Sans Mono", "Lucida Console", "Courier New", monospace;
-  font-size: 14px;
-  background-color: #0B0D0F
 }
 
 ::selection {
