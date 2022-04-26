@@ -25,10 +25,9 @@ section {
   margin: 0;
   padding: 0;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
-  background-color: #08070B;
 }
 
-::selection {
+::section {
   background-color: #9580FF;
   color: #08070B;
 }
@@ -172,7 +171,7 @@ section .title {
   padding-bottom: 10px;
 }
 
-section .title span {
+section .title h2 {
   display: inline-block;
   font-size: 5vw;
   color: #F8F8F2;
@@ -184,12 +183,12 @@ section .title span {
   letter-spacing: 0.25vw;
 }
 
-section .title span:last-child {
+section .title h2:last-child {
   font-size: 1rem;
   animation: byBottom 1s 0.25s ease both;
 }
 
-section .title span a {
+section .title h2 a {
   position: relative;
   display: inline-block;
   margin-left: 0.5rem;
@@ -197,7 +196,7 @@ section .title span a {
   color: #9580FF;
 }
 
-section .title span a::after {
+section .title h2 a::after {
   content: "";
   height: 2px;
   background-color: #80FFEA;
