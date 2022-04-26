@@ -39,7 +39,10 @@ button {
   padding: 10px;
   font-size: 1em;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+  cursor: pointer;
+  border-radius: 30px;
 }
+
 
 nav {
   width: 100%;
@@ -127,6 +130,8 @@ nav button:nth-child(7) {
 /* buttoon */
 nav button:hover {
   color: #9580FF;
+  background-color: #08070B;
+  transform: scale(1.5);
 }
 
 nav button:active {
