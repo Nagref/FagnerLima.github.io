@@ -61,7 +61,7 @@ nav li {
   line-height: 50px;
   width: 100px;
   text-align: center;
-  color: #8F9BA8;
+  color: #FFF;
   cursor: pointer;
   font-size: 12px;
   text-transform: uppercase;
@@ -73,7 +73,7 @@ nav li {
 
 nav li.active {
   background-color: #151515;
-  color: #F8F8F2;
+  color: #FFF;
   float: left;
   border-right: none;
 }
@@ -156,7 +156,7 @@ nav li:nth-child(7):hover~.slide {
 
 
 section {
-  background-color: #1b1b1b;
+  background-color: #000000;
   height: 100vh;
   display: flex;
 }
@@ -173,8 +173,8 @@ section .title {
 
 section .title h2 {
   display: inline-block;
-  font-size: 5vw;
-  color: #F8F8F2;
+  font-size: 1rem;
+  color: #FFF;
   width: 100%;
   text-transform: uppercase;
   transform: translateX(-100%);
