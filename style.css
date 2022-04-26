@@ -4,25 +4,14 @@ a {
   display: inline;
   width: 60px;
 }
-html {
-  background-color: #08070B;
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
   background-color: #08070B;
 }
-head {
-  display: block;
-  margin: 0;
-  padding: 0;
-  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
-  background-color: #08070B;
-}
+
 section {
   display: block;
   margin: 0;
