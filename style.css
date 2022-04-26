@@ -1,59 +1,85 @@
 a {
   color: inherit;
   text-decoration: inherit;
+  display: inline;
+  width: 60px;
 }
-
+html {
+  background-color: #08070B;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+  background-color: #08070B;
+}
+head {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+  background-color: #08070B;
+}
+section {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+  background-color: #08070B;
 }
 
 ::selection {
   background-color: #9580FF;
-  color: #1b1b1b;
+  color: #08070B;
 }
 
 nav {
   width: 100%;
-  background-color: #0b0b0b;
   position: fixed;
   bottom: 0;
-  height: 100px;
+  height: 50px;
   overflow: hidden;
+  display: flex
 }
 
 nav ul {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 140vw;
+  width: 100%;
 }
 
 nav li {
+  border-right: #9580FF;
   margin: 0;
-  display: inline-block;
-  height: 98px;
-  margin-bottom: 2px;
-  line-height: 100px;
-  width: 20vw;
+  display: inline;
+  float: left;
+  padding: 4px;
+  margin-bottom: -1px;
+  line-height: 50px;
+  width: 100px;
   text-align: center;
-  color: #555;
-  transition: background-color 0.5s 0.2s ease, color 0.3s ease;
+  color: #8F9BA8;
   cursor: pointer;
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 4px;
-  font-weight: 800;
+  letter-spacing: 1px;
+  font-weight: bold;
   transform: translateY(100%);
+  list-style: none;
 }
 
 nav li.active {
   background-color: #151515;
   color: #F8F8F2;
+  float: left;
+  border-right: none;
 }
 
 nav li.active::after {
@@ -131,18 +157,7 @@ nav li:nth-child(7):hover~.slide {
   left: 120vw;
 }
 
-/* Barra de seleção */
-nav li.slide {
-  position: absolute;
-  left: -20vw;
-  top: 0;
-  background-color: #80FFEA;
-  z-index: -1;
-  height: 2px;
-  margin-top: 98px;
-  transition: left 0.3s ease;
-  transform: translateY(0);
-}
+
 
 section {
   background-color: #1b1b1b;
