@@ -32,6 +32,14 @@ section {
   color: #08070B;
 }
 
+button {
+  background-color: #0000;
+  color: #FFF;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+}
 nav {
   width: 100%;
   position: fixed;
@@ -51,7 +59,7 @@ nav ul {
   width: 100%;
 }
 
-nav li {
+nav button {
   border-right: #9580FF;
   margin: 0;
   display: inline-block;
@@ -60,7 +68,7 @@ nav li {
   line-height: 50px;
   width: 100px;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
   font-size: 12px;
   text-transform: uppercase;
@@ -70,14 +78,14 @@ nav li {
   list-style: none;
 }
 
-nav li.active {
+nav button.active {
   background-color: #151515;
-  color: #FFF;
+  color: #151515;
   float: left;
   border-right: none;
 }
 
-nav li.active::after {
+nav button.active::after {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -87,68 +95,68 @@ nav li.active::after {
   background-color: #9580FF;
 }
 
-nav li:nth-child(1) {
+nav button:nth-child(1) {
   animation: pop 0.5s 0.15s 1 forwards;
 }
 
-nav li:nth-child(2) {
+nav button:nth-child(2) {
   animation: pop 0.5s 0.3s 1 forwards;
 }
 
-nav li:nth-child(3) {
+nav button:nth-child(3) {
   animation: pop 0.5s 0.45s 1 forwards;
 }
 
-nav li:nth-child(4) {
+nav button:nth-child(4) {
   animation: pop 0.5s 0.6s 1 forwards;
 }
 
-nav li:nth-child(5) {
+nav button:nth-child(5) {
   animation: pop 0.5s 0.75s 1 forwards;
 }
 
-nav li:nth-child(6) {
+nav button:nth-child(6) {
   animation: pop 0.5s 0.9s 1 forwards;
 }
 
-nav li:nth-child(7) {
+nav button:nth-child(7) {
   animation: pop 0.5s 1.05s 1 forwards;
 }
 
 /* buttoon */
-nav li:hover {
+nav button:hover {
   color: #9580FF;
 }
 
-nav li:active {
-  background-color: #222;
+nav button:active {
+  background-color: #151515;
 }
 
-nav li:nth-child(1):hover~.slide {
+nav button:nth-child(1):hover~.slide {
   left: 0;
 }
 
-nav li:nth-child(2):hover~.slide {
+nav button:nth-child(2):hover~.slide {
   left: 20vw;
 }
 
-nav li:nth-child(3):hover~.slide {
+nav button:nth-child(3):hover~.slide {
   left: 40vw;
 }
 
-nav li:nth-child(4):hover~.slide {
+nav button:nth-child(4):hover~.slide {
   left: 60vw;
 }
 
-nav li:nth-child(5):hover~.slide {
+nav button:nth-child(5):hover~.slide {
   left: 80vw;
 }
 
-nav li:nth-child(6):hover~.slide {
+nav button:nth-child(6):hover~.slide {
   left: 100vw;
 }
 
-nav li:nth-child(7):hover~.slide {
+nav button:nth-child(7):hover~.slide {
   left: 120vw;
 }
 
