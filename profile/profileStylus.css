@@ -2,7 +2,6 @@ a {
   color: inherit;
   text-decoration: inherit;
   display: inline-block;
-  width: 60px;
 }
 
 body {
@@ -47,7 +46,6 @@ button {
   color: #FFF;
   border: none;
   padding: 20px;
-  font-size: 1em;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
   cursor: pointer;
   border-radius: 30px;
