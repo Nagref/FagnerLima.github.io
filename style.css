@@ -131,7 +131,7 @@ nav button:nth-child(7) {
 /* buttoon */
 nav button:hover {
   color: #FFF;
-  background-color: #08070B;
+  background-color: #121314;
   transform: scale(1.5);
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
