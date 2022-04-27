@@ -1,0 +1,29 @@
+a {
+  color: inherit;
+  text-decoration: inherit;
+  display: inline-block;
+  width: 60px;
+}
+body {
+  background-color: #000;
+}
+
+div {
+  background-color: #000;
+  font-size: 12px;
+  color: #fff;
+  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.5em;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+}
+div.container {
+  display: flex;
+  margin: 10px;
+} 
