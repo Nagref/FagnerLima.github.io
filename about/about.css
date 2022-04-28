@@ -15,14 +15,35 @@ body {
   justify-content: center;
   background-color: #000;
 }
+@keyframes glitch {
+  0%,
+  55.1%,
+  100% {
+    background: url("/Avatar/nagref.png");
+    background-size: cover;
+  }
+  50% {
+    background: url("/Avatar/nagref-glich-1.png");
+    background-size: cover;
+  }
+  52.5% {
+    background: url("/Avatar/nagref-glich-2.png");
+    background-size: cover;
+  }
+  55% {
+    background: url("/Avatar/nagref-glich-3.png");
+    background-size: cover;
+  }
+}
 .avatar {
-  background: url("https://avatars.githubusercontent.com/nagref");
+  background: url("/Avatar/nagref.png");
   background-size: cover;
   width: 14rem;
   height: 14rem;
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 5rem;
+  animation: glitch 3.75s infinite steps(1);
 }
 
 h1 {
