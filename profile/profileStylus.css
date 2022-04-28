@@ -15,6 +15,15 @@ div {
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
 
+.avatar {
+  background: url("https://avatars.githubusercontent.com/nagref");
+  background-size: cover;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
 h1 {
   color: #fff;
   font-size: 3em;
@@ -33,14 +42,6 @@ h3 {
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
 
-img {
-  display: inline-block;
-  margin: 100px;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  padding: 0;
-}
-
 button {
   background-color: #0000;
   color: #FFF;
@@ -56,5 +57,3 @@ button:hover {
   background-color: #121314;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
-
-
