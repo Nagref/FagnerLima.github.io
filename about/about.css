@@ -6,6 +6,7 @@ a {
 body {
   background-color: #000;
 }
+
 .about-container {
   width: 100%;
   height: 100%;
@@ -15,26 +16,32 @@ body {
   justify-content: center;
   background-color: #000;
 }
+
 @keyframes glitch {
+
   0%,
   55.1%,
   100% {
     background: url("/Avatar/nagref.png");
     background-size: cover;
   }
+
   50% {
     background: url("/Avatar/nagref-glich-1.png");
     background-size: cover;
   }
+
   52.5% {
     background: url("/Avatar/nagref-glich-2.png");
     background-size: cover;
   }
+
   55% {
     background: url("/Avatar/nagref-glich-3.png");
     background-size: cover;
   }
 }
+
 .avatar {
   background: url("/Avatar/nagref.png");
   background-size: cover;
@@ -68,10 +75,10 @@ button {
   background-color: #0000;
   color: #8F9BA8;
   border: none;
-  padding: 20px;
+  padding: 10px;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 button:hover {

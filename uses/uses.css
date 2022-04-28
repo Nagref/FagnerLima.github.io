@@ -39,10 +39,10 @@ button {
   background-color: #0000;
   color: #8F9BA8;
   border: none;
-  padding: 20px;
+  padding: 10px;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 button:hover {
