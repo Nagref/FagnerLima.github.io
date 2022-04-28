@@ -23,7 +23,6 @@ h1 {
   font-size: 2rem;
   margin: 80px;
   max-width: 100%;
-  margin-bottom: 1.5em;
   padding: 0;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
@@ -31,6 +30,7 @@ h1 {
 h3 {
   color: #FFF;
   font-size: 1em;
+  text-align: justify;
   margin: 100px;
   padding: 0;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;

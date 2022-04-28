@@ -10,8 +10,9 @@ body {
 
 h1 {
   color: #FFF;
-  font-size: 3em;
+  font-size: 40px;
   justify-content: center;
+  text-align: justify;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -70,10 +71,10 @@ section .flex-container h3 {
   font-weight: bold;
   text-decoration: uppercase;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 30px;
   transform: translateX(-100%);
   animation: byBottom 1s ease both;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 1px;
   font-family: JetBrains Mono Regular, "Lucida Console", "Courier New", monospace;
 }
