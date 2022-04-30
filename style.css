@@ -3,31 +3,9 @@ a {
   text-decoration: inherit;
 }
 
-.about-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
-}
-
 body {
   background-color: #000;
 }
-
-h1 {
-  color: #FFF;
-  font-size: 40px;
-  justify-content: center;
-  text-align: justify;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
-}
-
 
 button {
   background-color: #0000;
@@ -45,63 +23,50 @@ button:hover {
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
 
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  background-color: #000000;
-  height: 90vh;
-  width: 90vw;
-  display: flex;
-}
-
-section .flex-container {
-  max-width: 50%;
-  width: 100%;
-  align-self: center;
-  transform: translateY(-50px);
-  margin: 0 auto;
-  overflow: hidden;
-  padding-bottom: 50px;
-}
-
-section .flex-container h3 {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  color: #8F9BA8;
+h1 {
+  color: #FFF;
+  font-size: 3rem;
+  max-width: 100%;
+  display: inline-block;
   font-weight: bold;
-  text-decoration: uppercase;
-  width: 100%;
-  font-size: 30px;
-  transform: translateX(-100%);
-  animation: byBottom 1s ease both;
+  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+}
+
+section .container {
+  transform: translateY(-50px);
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 15em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+section .container h3 {
+  color: #8F9BA8;
   font-weight: bold;
   letter-spacing: 1px;
   font-family: JetBrains Mono Regular, "Lucida Console", "Courier New", monospace;
 }
 
-section .flex-container h3:last-child {
+section .container h3:last-child {
   font-size: 1rem;
   animation: byBottom 1s 0.25s ease both;
 }
 
-section .flex-container h3 a {
+section .container h3 a {
   position: relative;
-  display: inline-block;
   margin-left: 0.5rem;
   text-decoration: none;
   color: #9580FF;
 }
 
-section .flex-container h3 a::after {
+section .container h3 a::after {
   content: "";
   height: 2px;
   background-color: #80FFEA;
