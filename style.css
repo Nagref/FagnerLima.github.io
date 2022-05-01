@@ -39,7 +39,7 @@ section .container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-block-start: 15em;
+  margin-block-start: 20em;
   margin-block-end: 35em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
@@ -208,5 +208,4 @@ section .container h2 a::after {
   max-width: 100%;
   border: none;
   margin: 0 auto;
-  max-width: 100%;
 }
