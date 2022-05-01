@@ -5,6 +5,7 @@ a {
 
 body {
   background-color: #000;
+  margin: 0 auto;
 }
 
 button {
@@ -27,6 +28,7 @@ h1 {
   color: #FFF;
   font-size: 3rem;
   max-width: 100%;
+  margin: 0 auto;
   display: inline-block;
   font-weight: bold;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
@@ -43,30 +45,32 @@ section .container {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   display: flex;
+  padding: auto;
   flex-direction: column;
   
 }
 
-section .container h3 {
+section .container h2 {
   color: #8F9BA8;
+  margin: 0 auto;
   font-weight: bold;
   letter-spacing: 1px;
   font-family: JetBrains Mono Regular, "Lucida Console", "Courier New", monospace;
 }
 
-section .container h3:last-child {
+section .container h2:last-child {
   font-size: 1rem;
   animation: byBottom 1s 0.25s ease both;
 }
 
-section .container h3 a {
+section .container h2 a {
   position: relative;
   margin-left: 0.5rem;
   text-decoration: none;
   color: #9580FF;
 }
 
-section .container h3 a::after {
+section .container h2 a::after {
   content: "";
   height: 2px;
   background-color: #80FFEA;
