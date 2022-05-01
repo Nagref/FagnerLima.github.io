@@ -97,3 +97,15 @@ button:hover {
   background-color: #121314;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
+
+.button-down {
+  padding: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  border: none;
+  margin: 0 auto;
+  max-width: 100%;
+}

@@ -51,7 +51,7 @@ h3 {
   font-size: 1rem;
   text-align: justify;
   margin-block-start: 0.67em;
-  margin-block-end: 20em;
+  margin-block-end: 10em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
@@ -94,4 +94,16 @@ h3 button:hover {
   display: list-item;
   font-weight: bold;      
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+}
+
+.button-down {
+  padding: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  border: none;
+  margin: 0 auto;
+  max-width: 100%;
 }
