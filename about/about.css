@@ -23,22 +23,22 @@ body {
   0%,
   55.1%,
   100% {
-    background: url("/Avatar/nagref.png");
+    background: url("/avatar/nagref.png");
     background-size: cover;
   }
 
   50% {
-    background: url("/Avatar/nagref-glich-1.png");
+    background: url("/avatar/nagref-glich-1.png");
     background-size: cover;
   }
 
   52.5% {
-    background: url("/Avatar/nagref-glich-2.png");
+    background: url("/avatar/nagref-glich-2.png");
     background-size: cover;
   }
 
   55% {
-    background: url("/Avatar/nagref-glich-3.png");
+    background: url("/avatar/nagref-glich-3.png");
     background-size: cover;
   }
 }
