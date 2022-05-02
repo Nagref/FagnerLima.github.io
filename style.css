@@ -46,7 +46,7 @@ section .container {
   display: flex;
   padding: auto;
   flex-direction: column;
-  
+
 }
 
 section .container h2 {
