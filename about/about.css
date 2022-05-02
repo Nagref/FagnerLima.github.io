@@ -44,7 +44,7 @@ body {
 }
 
 .avatar {
-  background: url("/Avatar/nagref.png");
+  background: url("/avatar/nagref.png");
   background-size: cover;
   width: 14rem;
   height: 14rem;
