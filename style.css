@@ -28,7 +28,7 @@ h1 {
   font-size: 3rem;
   max-width: 100%;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
   display: inline-block;
   font-weight: bold;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
