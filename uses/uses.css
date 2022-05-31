@@ -65,6 +65,8 @@ button {
   background-color: #0000;
   color: #8F9BA8;
   border: none;
+  margin-right: 0.5em;
+  justify-content: center;
   padding: 10px;
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
   cursor: pointer;
@@ -77,9 +79,9 @@ button:hover {
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
 
-h3 button {
+h3 li {
   color: #FFF;
-  font-size:14px;
+  font-size:16px;
   text-align: justify;  
   display: list-item;
   font-weight: bold;  
@@ -87,9 +89,9 @@ h3 button {
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
 
-h3 button:hover {
+h3 li:hover {
   color: #9580FF;
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;  
   display: list-item;
   font-weight: bold;      
@@ -104,4 +106,5 @@ h3 button:hover {
   max-width: 100%;
   border: none;
   margin: 0 auto;
+  margin-right: 0.5em;
 }
