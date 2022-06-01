@@ -1,6 +1,7 @@
-:root {
+*{
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
-  
+}
+:root {
   --black: #0B0D0F;
   --foreground: #F8F8F2;
   --selection: #414D58;
@@ -29,10 +30,7 @@ body {
 }
 
 .title {
-  color: var(--foreground);
-  font-size: 14px;
   font-weight: bolder;
-  text-align: center-align;
   padding-left: 10px;
   margin-left: 10px;
 }
@@ -60,7 +58,6 @@ section .title span {
   width: 100%;
   transform: translateX(-100%);
   animation: byBottom 1s ease both;
-  font-weight: 600;
   letter-spacing: 0.25vw;
 }
 
@@ -73,7 +70,6 @@ section .title span a {
   position: relative;
   display: inline-block;
   margin-left: 0.5rem;
-  text-decoration: none;
   color: var(--purple);
 }
 

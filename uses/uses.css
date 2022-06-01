@@ -1,6 +1,7 @@
-:root {
+*{
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
-  
+}
+:root {
   --black: #0B0D0F;
   --foreground: #F8F8F2;
   --selection: #414D58;
