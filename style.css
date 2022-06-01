@@ -28,46 +28,57 @@ body {
   color: var(--selection);
 }
 
-section{
-  transform: translateY(-50px);
-  max-width: 100%;
-  margin-block-start: 20em;
-  margin-block-end: 30em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  display: flex;
-  padding: 0;
-  flex-direction: column;
-}
-
-h1 {
+.title {
   color: var(--foreground);
-  font-size: 48px;
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center-align;
+  font-family: "JetBrains Mono";
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+section {
+  background-color: var(--black);
+  height: 100vh;
+  display: flex;
+}
+
+section .title {
+  max-width: 60%;
+  width: 100%;
+  align-self: center;
+  transform: translateY(-50px);
   margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+section .title span {
   display: inline-block;
-  font-weight: bold;
+  font-size: 5vw;
+  color: var(--foreground);
+  width: 100%;
+  transform: translateX(-100%);
+  animation: byBottom 1s ease both;
+  font-weight: 600;
+  letter-spacing: 0.25vw;
 }
 
- h2 {
-  color: var(--comment);
-  margin: 0 auto;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-h2:last-child {
-  font-size: 16px;
+section .title span:last-child {
+  font-size: 1rem;
   animation: byBottom 1s 0.25s ease both;
 }
 
-h2 a {
+section .title span a {
   position: relative;
+  display: inline-block;
   margin-left: 0.5rem;
   text-decoration: none;
   color: var(--purple);
 }
 
-h2 a::after {
+section .title span a::after {
   content: "";
   height: 2px;
   background-color: var(--cyan);
