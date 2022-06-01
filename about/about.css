@@ -1,10 +1,30 @@
+:root {
+  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+  
+  --black: #0B0D0F;
+  --foreground: #F8F8F2;
+  --selection: #414D58;
+  --comment: #708CA9;
+  --cyan: #80FFEA;
+  --green: #8AFF80;
+  --orange: #FFCA80;
+  --yellow: #FFFF80;
+  --red: #FF9580;
+  --pink: #FF80BF;
+  --purple: #9580FF;
+}
 a {
   color: inherit;
   text-decoration: inherit;
 }
 
 body {
-  background-color: #000;
+  background-color: var(--black);
+}
+
+::selection {
+  background: var(--pink);
+  color: var(--selection);
 }
 
 .about-container {
@@ -58,7 +78,7 @@ body {
 }
 
 h1 {
-  color: #fff;
+  color: var(--foreground);
   background-size: 100%;
   margin: 0 0 20px;
   font-size: 2rem;
@@ -69,38 +89,35 @@ h1 {
   font-weight: bold;
   max-width: 100%;
   padding: 0;
-  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
 
 h1 a {
-  color: #9580FF;
+  color: var(--purple);
 }
 
 h3 {
-  color: #FFF;
+  color: var(--foreground);
   font-size: 16px;
-  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
 h3 a {
-  color: #80FFEA;
+  color: var(--cyan);
 }
 
 button {
-  background-color: #0000;
-  color: #8F9BA8;
+  background-color: var(--black);
+  color: var(--selection);
+  font-weight: bold;
   border: none;
   margin-right: 0.5em;
   justify-content: center;
   padding: 10px;
-  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
   cursor: pointer;
   border-radius: 10px;
 }
 
 button:hover {
-  color: #FFF;
-  background-color: #121314;
-  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+  color: var(--foreground);
+  background-color: var(--selection);
 }
 
 .button-down {
