@@ -1,6 +1,7 @@
-*{
+* {
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
+
 :root {
   --black: #0B0D0F;
   --foreground: #F8F8F2;
@@ -43,7 +44,7 @@ section {
 
 section .title {
   max-width: 60%;
-  width:100%;
+  width: 100%;
   align-self: center;
   transform: translateY(-50px);
   margin: 0 auto;
@@ -80,6 +81,8 @@ section .title span a::after {
   width: 0;
   animation: linkAfter 0.5s 1s ease both;
 }
+
+/* Animação da abertura da página */
 
 @-moz-keyframes pop {
   0% {
@@ -200,6 +203,8 @@ section .title span a::after {
     width: 30px;
   }
 }
+
+/* Estilo dos botões de toda página */
 
 button {
   background-color: var(--black);
