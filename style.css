@@ -54,7 +54,7 @@ section .title {
 
 section .title span {
   display: inline-block;
-  font-size: 3em;
+  font-size: 2.5em;
   color: var(--foreground);
   width: 100%;
   transform: translateX(-100%);
