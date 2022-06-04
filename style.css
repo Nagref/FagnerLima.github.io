@@ -213,7 +213,6 @@ button {
   color: var(--selection-secondary);
   font-weight: bold;
   border: none;
-  margin-right: 0.5em;
   justify-content: center;
   padding: 10px;
   cursor: pointer;
@@ -223,6 +222,10 @@ button {
 button:hover {
   color: var(--foreground);
   background-color: var(--comment-secondary);
+}
+
+.button-up {
+  display: flex;
 }
 
 .button-down {
