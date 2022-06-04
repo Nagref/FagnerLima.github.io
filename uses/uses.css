@@ -1,11 +1,14 @@
-*{
+* {
   font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
 }
+
 :root {
   --black: #0B0D0F;
   --foreground: #F8F8F2;
   --selection: #414D58;
+  --selection-secondary: #8f9ba8;
   --comment: #708CA9;
+  --comment-secondary: #22212C;
   --cyan: #80FFEA;
   --green: #8AFF80;
   --orange: #FFCA80;
@@ -47,7 +50,7 @@ p {
   max-width: 100%;
   padding: 0;
 }
-  
+
 h1 {
   color: var(--foreground);
   font-size: 2rem;
@@ -82,26 +85,26 @@ h3 {
 
 h3 li {
   color: var(--foreground);
-  font-size:16px;
-  text-align: justify;  
+  font-size: 16px;
+  text-align: justify;
   display: list-item;
-  font-weight: bold;  
-  border-radius: 10px;    
+  font-weight: bold;
+  border-radius: 10px;
 }
 
 h3 li:hover {
   color: var(--purple);
   font-size: 16px;
-  text-align: justify;  
+  text-align: justify;
   display: list-item;
-  font-weight: bold;      
+  font-weight: bold;
 }
 
 /* Estilo dos botões de toda página */
 
 button {
   background-color: var(--black);
-  color: var(--selection);
+  color: var(--selection-secondary);
   font-weight: bold;
   border: none;
   margin-right: 0.5em;
@@ -113,7 +116,7 @@ button {
 
 button:hover {
   color: var(--foreground);
-  background-color: var(--selection);
+  background-color: var(--comment-secondary);
 }
 
 .button-down {

@@ -6,7 +6,9 @@
   --black: #0B0D0F;
   --foreground: #F8F8F2;
   --selection: #414D58;
+  --selection-secondary: #8f9ba8;
   --comment: #708CA9;
+  --comment-secondary: #22212C;
   --cyan: #80FFEA;
   --green: #8AFF80;
   --orange: #FFCA80;
@@ -208,7 +210,7 @@ section .title span a::after {
 
 button {
   background-color: var(--black);
-  color: var(--selection);
+  color: var(--selection-secondary);
   font-weight: bold;
   border: none;
   margin-right: 0.5em;
@@ -220,7 +222,7 @@ button {
 
 button:hover {
   color: var(--foreground);
-  background-color: var(--selection);
+  background-color: var(--comment-secondary);
 }
 
 .button-down {
