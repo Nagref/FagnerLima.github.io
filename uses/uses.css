@@ -122,6 +122,11 @@ button:hover {
   display: flex;
 }
 
+.button-up button {
+  border: none;
+  text-transform: uppercase;
+}
+
 .button-down {
   display: flex;
   flex-direction: row;
