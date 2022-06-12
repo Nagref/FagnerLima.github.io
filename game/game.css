@@ -1,0 +1,151 @@
+/* Copyright 2017 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+/* Don't use the main frame div when the error is in a subframe. */
+/* Background color */
+* {
+  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+}
+
+:root {
+  --black: #22212C;
+  --foreground: #F8F8F2;
+  --selection: #414D58;
+  --selection-secondary: #8f9ba8;
+  --comment: #708CA9;
+  --comment-secondary: #454158;
+  --cyan: #80FFEA;
+  --green: #8AFF80;
+  --orange: #FFCA80;
+  --yellow: #FFFF80;
+  --red: #FF9580;
+  --pink: #FF80BF;
+  --purple: #9580FF;
+}
+
+::selection {
+  background: var(--pink) !important;
+  color: var(--black) !important;
+  text-shadow: 0 0 0 var(--black);
+}
+
+strong {
+  background-image: linear-gradient(135deg, var(--yellow) 0%, var(--pink) 30%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--foreground);
+  background-size: 100%;
+  font-size: 2.5em;
+  line-height: 50px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  max-width: 100%;
+  padding: 0;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block-start: 100px;
+  text-transform: uppercase;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  background-color: var(--black);
+}
+
+/* Day & Night */
+.offline {
+  transition: -webkit-filter 1.5s cubic-bezier(0.65, 0.05, 0.36, 1),
+    background-color 1.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  will-change: -webkit-filter, background-color;
+}
+
+/* Color Invert */
+.offline.inverted {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  background-color: var(--comment-secondary);
+}
+
+.offline #main-message>p {
+  display: none;
+}
+
+.runner-container {
+  display: flex;
+
+}
+
+/* Largura */
+.offline .interstitial-wrapper {
+  color: var(--foreground);
+  font-size: 1em;
+  line-height: 1.55;
+  margin: Auto;
+  max-width: 600px;
+  padding-top: 100px;
+  width: 100%;
+}
+
+/* Layout de altura */
+.offline .runner-container {
+  direction: ltr;
+  height: 150px;
+  max-width: 600px;
+  overflow: hidden;
+  position: absolute;
+  top: 220px;
+  /* Top */
+  width: 44px;
+}
+
+/* Campos de jogos */
+#main-content {
+  display: none;
+}
+
+/* Estilo dos botões de toda página */
+
+button {
+  background-color: var(--black);
+  color: var(--selection-secondary);
+  font-weight: bold;
+  border: none;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: var(--foreground);
+  background-color: var(--comment-secondary);
+}
+
+.button-up {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.button-up button {
+  text-transform: uppercase;
+}
+
+.button-down {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 40em;
+  margin-right: 0.5em;
+}
