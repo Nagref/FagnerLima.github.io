@@ -39,7 +39,6 @@ body {
   margin-block-end: 10em;
   align-items: center;
   justify-content: center;
-  background-color: var(--black);
 }
 
 .avatar img {
