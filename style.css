@@ -35,9 +35,8 @@ body {
 
 .title {
   font-weight: bolder;
-  padding-left: 10px;
-  margin-left: 10px;
   text-transform: uppercase;
+  
 }
 
 section {
@@ -53,7 +52,6 @@ section .title {
   transform: translateY(-50px);
   margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 10px;
 }
 
 section .title span {
@@ -245,6 +243,6 @@ button:hover {
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 20em;
   margin-right: 0.5em;
 }
