@@ -29,7 +29,7 @@ body {
 
 ::selection {
   background: var(--pink);
-  color: var(--selection);
+  color: var(--black);
 }
 
 .title {
@@ -71,7 +71,11 @@ section .title span:last-child {
 section .title span strong {
   position: relative;
   display: inline-block;
-  color: var(--purple);
+  background-image: linear-gradient( 135deg, var(--pink) 0%, var(--purple) 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--black);
 }
 
 section .title span strong::after {
