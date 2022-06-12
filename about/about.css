@@ -28,8 +28,9 @@ body {
 }
 
 ::selection {
-  background: var(--yellow);
-  color: var(--black);
+  background: var(--yellow)!important;
+  color: var(--black)!important;
+  text-shadow: 0 0 0 var(--black);
 }
 
 .about-container {
@@ -50,14 +51,13 @@ body {
 }
 
 h1 {
-  background-image: linear-gradient( 135deg, var(--yellow) 0%, var(--pink) 100% );
+  background-image: linear-gradient( 135deg, var(--yellow) 0%, var(--pink) 30% );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  box-decoration-break: clone;
-  color: var(--black);
+  color: var(--foreground);
   background-size: 100%;
-  font-size: 32px;
+  font-size: 2.5em;
   line-height: 50px;
   margin: 0 0 20px;
   margin-block-start: 3em;
@@ -76,7 +76,7 @@ h3 {
 }
 
 h3 strong {
-  color: var(--cyan);
+  color: var(--yellow);
 }
 
 /* Estilo dos botões de toda página */

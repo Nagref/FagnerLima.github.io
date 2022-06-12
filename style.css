@@ -28,8 +28,9 @@ body {
 }
 
 ::selection {
-  background: var(--pink);
-  color: var(--black);
+  background: var(--pink)!important;
+  color: var(--black)!important;
+  text-shadow: 0 0 0 var(--black);
 }
 
 .title {
@@ -75,7 +76,7 @@ section .title span strong {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--black);
+  color: var(--foreground);
 }
 
 section .title span strong::after {

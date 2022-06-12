@@ -28,8 +28,9 @@ body {
 }
 
 ::selection {
-  background: var(--cyan);
-  color: var(--black);
+  background: var(--purple)!important;
+  color: var(--black)!important;
+  text-shadow: 0 0 0 var(--black);
 }
 
 .about-container {
@@ -56,9 +57,8 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--black);
-  line-height: 1.1;
-  font-size: 32px;
+  color: var(--foreground);
+  font-size: 2.5em;
   line-height: 50px;
   background-size: 100%;
   margin: 0 0 20px;
