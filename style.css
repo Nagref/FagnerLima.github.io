@@ -68,13 +68,13 @@ section .title span:last-child {
   animation: byBottom 1s 0.25s ease both;
 }
 
-section .title span a {
+section .title span strong {
   position: relative;
   display: inline-block;
   color: var(--purple);
 }
 
-section .title span a::after {
+section .title span strong::after {
   content: "";
   height: 2px;
   background-color: var(--cyan);
@@ -240,5 +240,6 @@ button:hover {
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
+  margin-top: 200px;
   margin-right: 0.5em;
 }
