@@ -22,16 +22,16 @@
   --red: #FF9580;
   --pink: #FF80BF;
   --purple: #9580FF;
-}
+} 
 
 ::selection {
-  background: var(--pink) !important;
-  color: var(--black) !important;
+  background: var(--pink)!important;
+  color: var(--black)!important;
   text-shadow: 0 0 0 var(--black);
-}
+} 
 
 strong {
-  background-image: linear-gradient(135deg, var(--yellow) 0%, var(--pink) 30%);
+  background-image: linear-gradient( 135deg, var(--yellow) 0%, var(--pink) 30% );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -45,13 +45,12 @@ strong {
   display: flex;
   max-width: 100%;
   padding: 0;
-  width: 1000px;
+  width: 1000px; 
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; 
   margin-block-start: 100px;
   text-transform: uppercase;
 }
-
 a {
   color: inherit;
   text-decoration: inherit;
@@ -64,7 +63,7 @@ body {
 /* Day & Night */
 .offline {
   transition: -webkit-filter 1.5s cubic-bezier(0.65, 0.05, 0.36, 1),
-    background-color 1.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+              background-color 1.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   will-change: -webkit-filter, background-color;
 }
 
@@ -75,15 +74,20 @@ body {
   background-color: var(--comment-secondary);
 }
 
-.offline #main-message>p {
+.offline #main-message > p {
   display: none;
+}
+
+.interstitial-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .runner-container {
   display: flex;
-
+ 
 }
-
 /* Largura */
 .offline .interstitial-wrapper {
   color: var(--foreground);
@@ -102,11 +106,9 @@ body {
   max-width: 600px;
   overflow: hidden;
   position: absolute;
-  top: 220px;
-  /* Top */
+  top: 220px;/* Top */
   width: 44px;
 }
-
 /* Campos de jogos */
 #main-content {
   display: none;
