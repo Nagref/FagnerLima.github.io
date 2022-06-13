@@ -31,7 +31,7 @@
 } 
 
 strong {
-  background-image: linear-gradient( 135deg, var(--yellow) 0%, var(--pink) 30% );
+  background-image: linear-gradient( 135deg, var(--pink) 10%, var(--cyan) 30% );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
