@@ -1,0 +1,72 @@
+* {
+  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+}
+
+:root {
+  --black: #22212C;
+  --foreground: #F8F8F2;
+  --selection: #414D58;
+  --selection-secondary: #8f9ba8;
+  --comment: #708CA9;
+  --comment-secondary: #454158;
+  --cyan: #80FFEA;
+  --green: #8AFF80;
+  --orange: #FFCA80;
+  --yellow: #FFFF80;
+  --red: #FF9580;
+  --pink: #FF80BF;
+  --purple: #9580FF;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  background-color: var(--black);
+}
+
+::selection {
+  background: var(--pink) !important;
+  color: var(--black) !important;
+  text-shadow: 0 0 0 var(--black);
+}
+
+
+/* Estilo dos botões de toda página */
+
+button {
+  background-color: var(--black);
+  color: var(--selection-secondary);
+  font-weight: bold;
+  border: none;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: var(--foreground);
+  background-color: var(--comment-secondary);
+}
+
+.button-up {
+  display: flex;
+}
+
+.button-up button {
+  text-transform: uppercase;
+}
+
+.button-down {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 20em;
+  margin-right: 0.5em;
+}
