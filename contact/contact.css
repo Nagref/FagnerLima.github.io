@@ -164,7 +164,7 @@ ul {
 
 button {
   background-color: var(--black);
-  color: var(--selection);
+  color: var(--selection-secondary);
   font-weight: bold;
   border: none;
   justify-content: center;
