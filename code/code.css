@@ -64,24 +64,19 @@ strong {
   background: #505050;
 }
 
-
 .container {
+  background-image: linear-gradient( 135deg, var(--cyan) 30%, var(--purple) 60% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color:var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
   overflow: hidden;
   background-color:var(--black);
   height: 100%;
-}
-
-.container {
-  color:var(--purple);
-  display: -webkit-flexbox;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  justify-content: center;
 }
 /* Estilo dos botões de toda página */
 

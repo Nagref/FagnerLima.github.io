@@ -33,6 +33,28 @@ body {
   text-shadow: 0 0 0 var(--black);
 }
 
+strong {
+  background-image: linear-gradient( 135deg, var(--purple) 10%, var(--pink) 20% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--foreground);
+  background-size: 100%;
+  font-size: 2.5em;
+  line-height: 50px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  max-width: 100%;
+  padding: 0;
+  width: 1000px; 
+  margin-left: auto;
+  margin-right: auto; 
+  margin-block-start: 100px;
+  text-transform: uppercase;
+}
+
 span .label{
   margin: 0;
   background: var(--black);
@@ -53,17 +75,17 @@ ul {
   position: relative;
   justify-content: center;
   display: flex;
-  margin-top: 20rem;
+  margin-top: 10rem;
   margin-bottom: 30rem;
   margin-left: 50rem;
   margin-right: 50rem;
-
 }
 
 @media screen and (max-width: 600px) {
   .dropdown {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 5rem;
 
   }
 }
@@ -76,6 +98,8 @@ ul {
   display: block;
   box-sizing: border-box;
   transition: all 0.3s;
+  border-radius: 10px;
+  color: var(--foreground);
 }
 
 .items a {
@@ -85,6 +109,7 @@ ul {
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: all 0.2s;
+  border-radius: 5px;
 }
 
 .items a:hover {
@@ -108,6 +133,7 @@ ul {
   transform-origin: top;
   transform: scaleY(0);
   transition: transform 0.3s;
+  border-radius: 10px;
 }
 
 .items::before {
@@ -131,13 +157,14 @@ ul {
 
 .dropdown:hover > .label {
   background: var(--purple);
+  color: var(--selection);
 }
 
 /* Estilo dos botões de toda página */
 
 button {
   background-color: var(--black);
-  color: var(--selection-secondary);
+  color: var(--selection);
   font-weight: bold;
   border: none;
   justify-content: center;
