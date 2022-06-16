@@ -30,6 +30,11 @@
   text-shadow: 0 0 0 var(--black);
 } 
 
+.fa-brands,
+.fa-solid {
+  margin-right: 5px;
+}
+
 strong {
   background-image: linear-gradient( 135deg, var(--pink) 10%, var(--cyan) 30% );
   background-clip: text;
@@ -150,6 +155,6 @@ button:hover {
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
-  margin-top: 40em;
+  margin-top: 29em;
   margin-right: 0.5em;
 }
