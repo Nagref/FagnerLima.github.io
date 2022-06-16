@@ -45,7 +45,7 @@ body {
 
 section {
   background-color: var(--black);
-  height: 90vh;
+  height: 95vh;
   display: flex;
 }
 
@@ -247,6 +247,4 @@ button:hover {
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
-  margin-top: 1em;
-  margin-right: 0.5em;
 }
