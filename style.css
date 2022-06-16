@@ -50,13 +50,17 @@ section {
 }
 
 section .title {
-  max-width: 60%;
-  width: 100%;
+  /* max-width: 60%;
+  width: 100%; */
   align-self: center;
   transform: translateY(-50px);
   margin: 0 auto;
   overflow: hidden;
 }
+@media screen and (max-width: 600px) {
+  section .title {max-width: 60%;
+    width: 100%;;
+} }
 
 section .title span {
   display: inline-block;
