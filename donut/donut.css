@@ -26,17 +26,18 @@ a {
 body {
   background-color: #22212C;
   color: #F8F8F2;
-  text-align:center;
+  text-align: center;
 }
-p{
-  font-size:16px;
+
+p {
+  font-size: 16px;
 }
 
 ::selection {
-  background: var(--cyan)!important;
-  color: var(--black)!important;
+  background: var(--cyan) !important;
+  color: var(--black) !important;
   text-shadow: 0 0 0 var(--black);
-} 
+}
 
 .fa-brands,
 .fa-solid {
@@ -44,7 +45,7 @@ p{
 }
 
 strong {
-  background-image: linear-gradient( 135deg, var(--purple) 5%, var(--cyan) 10% );
+  background-image: linear-gradient(135deg, var(--purple) 5%, var(--cyan) 10%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -58,9 +59,9 @@ strong {
   display: flex;
   max-width: 100%;
   padding: 0;
-  width: 1000px; 
+  width: 1000px;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
   margin-block-start: 100px;
   text-transform: uppercase;
 }
@@ -70,19 +71,20 @@ strong {
 }
 
 .container {
-  background-image: linear-gradient( 135deg, var(--cyan) 30%, var(--purple) 60% );
+  background-image: linear-gradient(135deg, var(--cyan) 30%, var(--purple) 60%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color:var(--purple);
+  color: var(--purple);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
   overflow: hidden;
-  background-color:var(--black);
+  background-color: var(--black);
   height: 100%;
 }
+
 /* Estilo dos botões de toda página */
 
 button {
@@ -94,6 +96,7 @@ button {
   padding: 10px;
   cursor: pointer;
   border-radius: 10px;
+  font-size: 12px;
 }
 
 button:hover {
@@ -107,6 +110,7 @@ button:hover {
 
 .button-up button {
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .button-down {
@@ -116,5 +120,5 @@ button:hover {
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
-  margin-top: 9em;
+  margin-top: 18em;
 }

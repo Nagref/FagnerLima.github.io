@@ -24,7 +24,7 @@ a {
 }
 
 body {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 ::selection {
@@ -44,8 +44,9 @@ img {
   margin-bottom: 0px;
   border-radius: 20px;
 }
+
 strong {
-  background-image: linear-gradient( 135deg, var(--purple) 10%, var(--pink) 20% );
+  background-image: linear-gradient(135deg, var(--purple) 10%, var(--pink) 20%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -59,14 +60,14 @@ strong {
   display: flex;
   max-width: 100%;
   padding: 0;
-  width: 1000px; 
+  width: 1000px;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
   margin-block-start: 100px;
   text-transform: uppercase;
 }
 
-span .label{
+span .label {
   margin: 0;
   background: var(--black);
   color: var(--foreground);
@@ -84,6 +85,7 @@ ul {
 
 .dropdown {
   position: relative;
+  font-size: 16px;
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 24%;
@@ -150,14 +152,14 @@ ul {
   z-index: -1;
 }
 
-.dropdown:hover > .items {
+.dropdown:hover>.items {
   opacity: 1;
   visibility: visible;
   height: unset;
   transform: scaleY(1);
 }
 
-.dropdown:hover > .label {
+.dropdown:hover>.label {
   background: var(--purple);
   color: var(--selection);
 }
@@ -173,6 +175,7 @@ button {
   padding: 10px;
   cursor: pointer;
   border-radius: 10px;
+  font-size: 12px;
 }
 
 button:hover {
@@ -186,15 +189,15 @@ button:hover {
 
 .button-up button {
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .button-down {
-  content: "";
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
-  margin-top: 32em;
+  margin-top: 18em;
 }

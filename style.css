@@ -28,8 +28,8 @@ body {
 }
 
 ::selection {
-  background: var(--pink)!important;
-  color: var(--black)!important;
+  background: var(--pink) !important;
+  color: var(--black) !important;
   text-shadow: 0 0 0 var(--black);
 }
 
@@ -57,10 +57,14 @@ section .title {
   margin: 0 auto;
   overflow: hidden;
 }
+
 @media screen and (max-width: 600px) {
-  section .title {max-width: 60%;
-    width: 100%;;
-} }
+  section .title {
+    max-width: 60%;
+    width: 100%;
+    ;
+  }
+}
 
 section .title span {
   display: inline-block;
@@ -78,7 +82,7 @@ section .title span:last-child {
 section .title span strong {
   position: relative;
   display: inline-block;
-  background-image: linear-gradient( 135deg, var(--pink) 0%, var(--purple) 100% );
+  background-image: linear-gradient(135deg, var(--pink) 0%, var(--purple) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -229,6 +233,7 @@ button {
   padding: 10px;
   cursor: pointer;
   border-radius: 10px;
+  font-size: 12px;
 }
 
 button:hover {
@@ -242,6 +247,7 @@ button:hover {
 
 .button-up button {
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .button-down {
@@ -251,4 +257,5 @@ button:hover {
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
+  margin-top: 18em;
 }

@@ -28,8 +28,8 @@ body {
 }
 
 ::selection {
-  background: var(--purple)!important;
-  color: var(--black)!important;
+  background: var(--purple) !important;
+  color: var(--black) !important;
   text-shadow: 0 0 0 var(--black);
 }
 
@@ -61,8 +61,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .list {flex-direction: column;
-} }
+  .list {
+    flex-direction: column;
+  }
+}
 
 p {
   color: var(--cyan);
@@ -74,7 +76,7 @@ p {
 }
 
 h1 {
-  background-image: linear-gradient( 135deg, var(--purple) 0%, var(--cyan) 100% );
+  background-image: linear-gradient(135deg, var(--purple) 0%, var(--cyan) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -85,9 +87,9 @@ h1 {
   font-weight: bold;
   max-width: 100%;
   padding: 0;
-  width: 1000px; 
+  width: 1000px;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
   margin-block-start: 100px;
   text-transform: uppercase;
 }
@@ -97,11 +99,11 @@ h1 {
     align-items: center;
     display: inline-block;
   }
-} 
+}
 
 h3 {
   color: var(--foreground);
-  font-size: 18px;
+  font-size: 16px;
   margin-block-start: 0;
   margin-block-end: 1em;
   max-width: 100%;
@@ -137,6 +139,7 @@ button {
   padding: 10px;
   cursor: pointer;
   border-radius: 10px;
+  font-size: 12px;
 }
 
 button:hover {
@@ -150,6 +153,7 @@ button:hover {
 
 .button-up button {
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .button-down {
