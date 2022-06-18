@@ -73,11 +73,10 @@ ul {
 
 .dropdown {
   position: relative;
-  display: flex;
   margin-top: 10rem;
   margin-bottom: 30rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 28%;
+  margin-right: 28%;
 }
 
 .label {
@@ -85,7 +84,9 @@ ul {
   background: var(--comment-secondary);
   padding: 0.8rem 1rem;
   width: 100%;
-  display: block;
+  display: flex;
+  justify-self: center;
+  align-items: center;
   box-sizing: border-box;
   transition: all 0.3s;
   border-radius: 10px;
