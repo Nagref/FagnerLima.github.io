@@ -58,11 +58,14 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+  margin-left: 200px;
 }
 
 @media screen and (max-width: 800px) {
   .list {
     flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
