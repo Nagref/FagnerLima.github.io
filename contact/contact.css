@@ -33,6 +33,17 @@ body {
   text-shadow: 0 0 0 var(--black);
 }
 
+img {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  border-radius: 20px;
+}
 strong {
   background-image: linear-gradient( 135deg, var(--purple) 10%, var(--pink) 20% );
   background-clip: text;
@@ -73,8 +84,8 @@ ul {
 
 .dropdown {
   position: relative;
-  margin-top: 10rem;
-  margin-bottom: 30rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-left: 24%;
   margin-right: 24%;
 }
