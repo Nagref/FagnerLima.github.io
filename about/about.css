@@ -3,21 +3,20 @@
 }
 
 :root {
-  --black: #22212C;
-  --foreground: #F8F8F2;
-  --selection: #414D58;
-  --selection-secondary: #8f9ba8;
-  --comment: #708CA9;
-  --comment-secondary: #454158;
-  --cyan: #80FFEA;
-  --green: #8AFF80;
-  --orange: #FFCA80;
-  --yellow: #FFFF80;
-  --red: #FF9580;
-  --pink: #FF80BF;
-  --purple: #9580FF;
+  --black: #000000;
+  --foreground: #C9D1D9;
+  --selection: #4D4D4D;
+  --selection-secondary: #8B949E;
+  --comment: #3B5070;
+  --comment-secondary: #444C56;
+  --cyan: #2B7489;
+  --green: #56D364;
+  --orange: #F78166;
+  --yellow: #E3B341;
+  --red: #F78166;
+  --pink: #DB61A2;
+  --purple: #6CA4F8;
 }
-
 a {
   color: inherit;
   text-decoration: inherit;
@@ -65,7 +64,7 @@ body {
 .avatar img {
   width: 25rem;
   height: 25rem;
-  border-radius: 10%;
+  border-radius: 60%;
   border: 1px solid var(--black);
   margin-block-start: 4em;
   margin-block-end: 1em;

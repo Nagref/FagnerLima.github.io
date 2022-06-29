@@ -3,19 +3,19 @@
 }
 
 :root {
-  --black: #22212C;
-  --foreground: #F8F8F2;
-  --selection: #414D58;
-  --selection-secondary: #8f9ba8;
-  --comment: #708CA9;
-  --comment-secondary: #454158;
-  --cyan: #80FFEA;
-  --green: #8AFF80;
-  --orange: #FFCA80;
-  --yellow: #FFFF80;
-  --red: #FF9580;
-  --pink: #FF80BF;
-  --purple: #9580FF;
+  --black: #000000;
+  --foreground: #C9D1D9;
+  --selection: #4D4D4D;
+  --selection-secondary: #8B949E;
+  --comment: #3B5070;
+  --comment-secondary: #444C56;
+  --cyan: #2B7489;
+  --green: #56D364;
+  --orange: #F78166;
+  --yellow: #E3B341;
+  --red: #F78166;
+  --pink: #DB61A2;
+  --purple: #6CA4F8;
 }
 
 a {
@@ -24,8 +24,7 @@ a {
 }
 
 body {
-  background-color: #22212C;
-  color: #F8F8F2;
+  background-color: var(--black);
   text-align: center;
 }
 
@@ -34,7 +33,7 @@ p {
 }
 
 ::selection {
-  background: var(--cyan) !important;
+  background: var(--green) !important;
   color: var(--black) !important;
   text-shadow: 0 0 0 var(--black);
 }
@@ -45,7 +44,7 @@ p {
 }
 
 strong {
-  background-image: linear-gradient(135deg, var(--purple) 5%, var(--cyan) 10%);
+  background-image: linear-gradient(135deg, var(--purple) 5%, var(--green) 10%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -71,7 +70,7 @@ strong {
 }
 
 .container {
-  background-image: linear-gradient(135deg, var(--cyan) 30%, var(--purple) 60%);
+  background-image: linear-gradient(135deg, var(--green) 30%, var(--purple) 60%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
