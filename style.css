@@ -62,17 +62,24 @@ section .title {
   section .title {
     max-width: 60%;
     width: 100%;
-    ;
+  };
+  section .title span {
+    font-size: 2em;
   }
 }
 
 section .title span {
   display: inline-block;
-  font-size: 2.7em;
+  font-size: 3.5em;
   color: var(--foreground);
   width: 100%;
   transform: translateX(-100%);
   animation: byBottom 1s ease both;
+}
+@media screen and (max-width: 600px) {
+  section .title span {
+    font-size: 2.5em;
+  }
 }
 
 section .title span:last-child {
@@ -248,6 +255,12 @@ button:hover {
 .button-up button {
   text-transform: uppercase;
   font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .button-up button {
+    font-size: 16px;
+  }
 }
 
 .button-down {
