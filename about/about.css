@@ -61,11 +61,11 @@ body {
     flex-direction: column;
   }
 }
-.avatar {
+/* .avatar {
   background-color: var(--comment-secondary);
   border-radius: 60%;
   margin-left:1.5em;
-}
+} */
 .avatar img {
   width: 25rem;
   height: 25rem;
