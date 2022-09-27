@@ -57,7 +57,7 @@ body {
   flex-wrap: nowrap;
   flex-direction: row;
   align-items: flex-start;
-  /* justify-content: center; */
+  justify-content: center;
   /* margin-left: 200px; */
 }
 
