@@ -120,6 +120,7 @@ ul {
   border-radius: 30px;
   color: var(--foreground);
   border: 2px solid var(--foreground);
+  font-weight: bold;
 }
 
 .items a {
@@ -131,6 +132,7 @@ ul {
   transition: all 0.2s;
   border-radius: 30px;
   border: 2px solid var(--foreground);
+  font-weight: bold;
 }
 
 .items a:hover {
