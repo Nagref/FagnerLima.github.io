@@ -18,6 +18,21 @@
   --purple: #9580FF;
 }
 
+/* Estilizando barras de rolagem no Chrome, Edge e Safari */
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--black);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--black);/* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid var(--pink);  /* creates padding around scroll thumb */
+}
+
 a {
   color: inherit;
   text-decoration: inherit;
