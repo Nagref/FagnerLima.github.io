@@ -111,6 +111,7 @@ strong {
   align-items: flex-start;
   justify-content: center;
 }
+
 h3 {
   color: var(--foreground);
   font-size: 16px;
