@@ -25,6 +25,7 @@ a {
 
 body {
   background-color: var(--black);
+  border: 4px solid var(--yellow);
 }
 
 ::selection {
@@ -132,14 +133,15 @@ h3 {
   margin-right: 0.5em;
   background-color: var(--comment-secondary);
   border-radius: 30px;
+  border: 2px solid var(--foreground);
 }
 
 p { 
-  margin: 1em;
+  margin: 0.9em;
 }
 
 li {
-  margin: 1em;
+  margin: 0.4em;
 }
 
 @media screen and (max-width: 600px) {
@@ -164,7 +166,7 @@ button {
   font-weight: bold;
   border: none;
   justify-content: center;
-  padding: 8px;
+  padding: 6px;
   cursor: pointer;
   border-radius: 10px;
   font-size: 12px;
@@ -177,6 +179,8 @@ button:hover {
 
 .button-up {
   display: flex;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
 }
 
 .button-up button {
@@ -197,5 +201,12 @@ button:hover {
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
-  margin-top: 15em;
+  margin-top: 10em;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .button-down{
+    font-size: 0.5em;
+  }
 }
