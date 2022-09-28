@@ -33,7 +33,7 @@ p {
 }
 
 ::selection {
-  background: var(--green) !important;
+  background: var(--pink) !important;
   color: var(--black) !important;
   text-shadow: 0 0 0 var(--black);
 }
@@ -44,7 +44,7 @@ p {
 }
 
 strong {
-  background-image: linear-gradient(135deg, var(--purple) 5%, var(--green) 10%);
+  background-image: linear-gradient(135deg, var(--red) 0%, var(--purple) 20%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -66,24 +66,44 @@ strong {
 }
 
 ::-moz-selection {
-  background: #505050;
+  background: var(--comment-secondary);
 }
 
 .container {
-  background-image: linear-gradient(135deg, var(--green) 30%, var(--purple) 60%);
+  /* background-image: linear-gradient(135deg, var(--red) 15%, var(--purple) 70%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--purple);
+  -webkit-text-fill-color: transparent; */
+  font-size: 0.8em;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
   overflow: hidden;
-  background-color: var(--black);
-  height: 100%;
+  border-radius: 30px;
+  /* background-color: var(--comment-secondary); */
+  border-color: var(--pink);
+  border-width: medium;
+  border-style: solid;
+  margin-left: 30em;
+  margin-right: 30em;
 }
 
+@media screen and (max-width: 800px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.center {
+  background-image: linear-gradient(135deg, var(--purple) 15%, var(--red) 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-size: 0.9em; */
+  font-weight: bold;
+}
 /* Estilo dos botões de toda página */
 
 button {
@@ -125,5 +145,5 @@ button:hover {
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
-  margin-top: 20em;
+  margin-top: 18em;
 }

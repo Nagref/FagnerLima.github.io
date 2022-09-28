@@ -269,5 +269,9 @@ button:hover {
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.title a:hover {
+  color: var(--green)
 }

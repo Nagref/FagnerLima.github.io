@@ -79,7 +79,7 @@ span .label {
   color: var(--foreground);
   display: grid;
   place-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 ul {
@@ -94,8 +94,15 @@ ul {
   font-size: 16px;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 24%;
-  margin-right: 24%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+@media screen  and (max-width: 600px){
+  .dropdown {
+    margin-left: 25%;
+    margin-right: 25%; 
+  }
 }
 
 .label {
@@ -108,7 +115,7 @@ ul {
   align-items: center;
   box-sizing: border-box;
   transition: all 0.3s;
-  border-radius: 10px;
+  border-radius: 30px;
   color: var(--foreground);
 }
 
@@ -119,7 +126,7 @@ ul {
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: all 0.2s;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 
 .items a:hover {
@@ -143,7 +150,7 @@ ul {
   transform-origin: top;
   transform: scaleY(0);
   transition: transform 0.3s;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .items::before {
@@ -211,5 +218,5 @@ button:hover {
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
-  margin-top: 40em;
+  margin-top: 25em;
 }

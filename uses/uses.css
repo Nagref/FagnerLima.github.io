@@ -115,7 +115,7 @@ h3 {
   margin-left: 0.5em;
   margin-right: 0.5em;
   background-color: var(--comment-secondary);
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 p {
@@ -131,7 +131,7 @@ h3 li {
   text-align: justify;
   display: list-item;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 h3 li:hover {
