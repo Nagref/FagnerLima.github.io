@@ -233,7 +233,7 @@ section .title span strong::after {
 /* Estilo dos botões de toda página */
 
 button {
-  background-color: var(--black);
+  background-color: var(--selection);
   color: var(--selection-secondary);
   font-weight: bold;
   border: none;
@@ -246,13 +246,16 @@ button {
 
 button:hover {
   color: var(--foreground);
-  background-color: var(--comment-secondary);
+  /* background-color: var(--selection-secondary); */
 }
 
 .button-up {
   display: flex;
   margin-top: 0.5em;
   margin-left: 0.5em;
+  margin-right: 0.5em;
+  background-color: var(--selection);
+  border-radius: 0.5em;
 }
 
 .button-up button {
@@ -274,6 +277,10 @@ button:hover {
   max-width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.button-down button {
+  background-color: var(--black);
 }
 
 @media screen and (max-width: 600px) {
