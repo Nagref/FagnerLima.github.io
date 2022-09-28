@@ -163,7 +163,7 @@ p {
 /* Estilo dos botões de toda página */
 
 button {
-  background-color: var(--selection);
+  background-color: var(--black);
   color: var(--selection-secondary);
   font-weight: bold;
   border: none;
@@ -176,7 +176,7 @@ button {
 
 button:hover {
   color: var(--foreground);
-  /* background-color: var(--selection-secondary); */
+  background-color: var(--comment-secondary);
 }
 
 .button-up {
@@ -184,7 +184,7 @@ button:hover {
   margin-top: 0.5em;
   margin-left: 0.5em;
   margin-right: 0.5em;
-  background-color: var(--selection);
+  background-color: var(--black);
   border-radius: 0.5em;
 }
 
