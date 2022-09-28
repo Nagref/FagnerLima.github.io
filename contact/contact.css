@@ -41,6 +41,7 @@ a {
 body {
   background-color: var(--black);
   border: 4px solid var(--purple);
+  border-radius: 10px;
 }
 
 ::selection {
