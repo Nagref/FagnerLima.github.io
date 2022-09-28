@@ -232,5 +232,7 @@ button:hover {
 @media screen and (max-width: 600px) {
   .button-down{
     font-size: 0.5em;
+    display:flex;
+    flex-direction: column;
   }
 }
