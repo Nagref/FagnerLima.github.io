@@ -92,7 +92,7 @@ body {
   width: 25rem;
   height: 25rem;
   border-radius: 60%;
-  border: 4px solid var(--comment-secondary);
+  border: 4px solid var(--yellow);
   margin-block-start: 4em;
   margin-block-end: 1em;
   margin-left: 0.5em;
@@ -102,8 +102,9 @@ body {
 
 @media screen and (max-width: 600px) {
   .avatar img {
-    width: 20rem;
-    height: 20rem;
+    display: flex;
+    width: 20em;
+    height: 20em;
     margin-block-start: 2em;
     margin-block-end: 1em;
   }
