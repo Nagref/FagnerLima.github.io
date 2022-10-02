@@ -41,7 +41,7 @@ body::-webkit-scrollbar-thumb {
 
 
 ::selection {
-  background: var(--pink) !important;
+  background: var(--green) !important;
   color: var(--black) !important;
   text-shadow: 0 0 0 var(--black);
 }
