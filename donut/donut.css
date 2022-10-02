@@ -50,7 +50,7 @@ p {
 }
 
 ::selection {
-  background: var(--pink) !important;
+  background: var(--red) !important;
   color: var(--black) !important;
   text-shadow: 0 0 0 var(--black);
 }
@@ -99,7 +99,7 @@ strong {
   overflow: hidden;
   border-radius: 30px;
   /* background-color: var(--comment-secondary); */
-  border-color: var(--pink);
+  border-color: var(--purple);
   border-width: medium;
   border-style: solid;
   margin-left: 30em;
