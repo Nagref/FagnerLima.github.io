@@ -67,7 +67,7 @@ strong {
   -webkit-text-fill-color: transparent;
   color: var(--foreground);
   background-size: 100%;
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 50px;
   font-weight: bold;
   align-items: center;
@@ -75,11 +75,10 @@ strong {
   display: flex;
   max-width: 100%;
   padding: 0;
-  width: 1000px;
+  width: 750px;
   margin-left: auto;
   margin-right: auto;
   margin-block-start: 100px;
-  text-transform: uppercase;
 }
 
 ::-moz-selection {
@@ -97,7 +96,7 @@ strong {
   justify-content: center;
   margin-top: 5rem;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 1em;
   /* background-color: var(--comment-secondary); */
   border-color: var(--purple);
   border-width: medium;
@@ -139,9 +138,9 @@ h3 {
   width: 500px;
   margin-left: 0.5em;
   margin-right: 0.5em;
-  background-color: var(--comment-secondary);
-  border-radius: 30px;
-  border: 2px solid var(--foreground);
+  background-color: var(--black);
+  border-radius: 1em;
+  border: 2px solid var(--comment-secondary);
   /* width: 100%;
   height: 100%; */
 
