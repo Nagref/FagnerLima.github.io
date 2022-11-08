@@ -188,7 +188,7 @@ button:hover {
 
 .button-up button {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -203,9 +203,9 @@ button:hover {
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  margin: 0 auto;
-  margin-top: 11em;
+  margin-top: 1em;
   margin-bottom: 1em;
+  font-size: 10px;
 }
 
 .button-down button {

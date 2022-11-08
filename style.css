@@ -279,7 +279,7 @@ button:hover {
 
 .button-up button {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -296,6 +296,7 @@ button:hover {
   max-width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-size: 10px;
 }
 
 .button-down button {
