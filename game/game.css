@@ -79,7 +79,7 @@ a {
 
 body {
   background-color: var(--black);
-  border: 4px solid var(--green);
+  border: 2px solid var(--green);
   border-radius: 10px;
 }
 
@@ -113,11 +113,11 @@ body {
   display: flex;
   border-radius: 1em;
   background-color: var(--purple);
-  border-color: var(--green);
-  border-width: medium;
+  border-color: var(--comment-secondary);
+  border-width: 2px;
   border-style: solid;
   padding: 0.5em;
-  max-width: 95%;
+  max-width: 93%;
 }
 
 /* Largura */
