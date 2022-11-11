@@ -70,7 +70,7 @@ img {
 }
 
 strong {
-  background-image: linear-gradient(135deg, var(--purple) 10%, var(--pink) 20%);
+  background-image: linear-gradient(135deg, var(--pink) 10%, var(--purple) 20%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
