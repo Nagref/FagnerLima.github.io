@@ -46,7 +46,7 @@ a {
 body {
   background-color: var(--black);
   border: 2px solid var(--comment-secondary);
-  border-radius: 10px;
+  /* border-radius: 10px; */
   min-height: 100vh;
   grid-template-areas:
     "bottom-up"
@@ -106,7 +106,7 @@ body {
 .about3 {
   grid-area: div3;
   margin-left: 0.5em;
-  margin-top: -9em;
+  margin-top: -11em;
 }
 
 @media screen and (max-width: 600px) {
@@ -219,11 +219,13 @@ h1 {
 } */
 
 p {
-  margin: 0.9em;
+  margin: 0.4em;
+  padding: 1em;
 }
 
 li {
   margin: 0.4em;
+  padding: 1em;
 }
 
 @media screen and (max-width: 600px) {

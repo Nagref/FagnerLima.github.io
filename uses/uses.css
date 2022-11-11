@@ -40,8 +40,11 @@ a {
 
 body {
   background-color: var(--black);
-  border: 2px solid var(--comment-secondary);
-  border-radius: 10px;
+  text-align: center;
+  border-image: linear-gradient(var(--purple), var(--cyan)) 30;
+  border-width: 2px;
+  border-style: solid;
+  /* border-radius: 10px; */
   min-height: 100vh;
 }
 
