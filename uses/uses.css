@@ -41,7 +41,7 @@ a {
 body {
   background-color: var(--black);
   text-align: center;
-  border-image: linear-gradient(var(--purple), var(--cyan)) 30;
+  border-image: linear-gradient(var(--cyan), var(--purple)) 30;
   border-width: 2px;
   border-style: solid;
   /* border-radius: 10px; */
