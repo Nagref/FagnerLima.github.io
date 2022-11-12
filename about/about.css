@@ -177,7 +177,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* text-shadow: 0 0 0.2em var(--purple); */
+  
   color: var(--foreground);
   background-size: 100%;
   font-size: 48px;
@@ -189,8 +189,9 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-block-start: 100px;
-  /* display: block; */
-  /* text-transform: uppercase; */
+  /* display: block;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.2em var(--purple); */
 }
 
 @media screen and (max-width: 600px) {
