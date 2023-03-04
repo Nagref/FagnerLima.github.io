@@ -1,14 +1,14 @@
-package main 
+package main
 
-import ( 
-"net/http"
- ) 
+import (
+	"net/http"
+)
 
-func handler(w http.ResponseWriter, r *http.Request) { 
-http.ServeFile(w, r, "./static/index.html")
- } 
+func handler(w http.ResponseWriter, r *http.Request) {
+	http.ServeFile(w, r, "index.html")
+}
 
-func main() { 
-http.HandleFunc("/", handler) 
-http.ListenAndServe(":8080", nil) 
+func main() {
+	http.HandleFunc("/", handler)
+	http.ListenAndServe(":8080", nil)
 }
