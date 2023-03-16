@@ -1,5 +1,5 @@
 * {
-  font-family: "JetBrains Mono Regular", "Lucida Console", "Courier New", monospace;
+  font-family: "JetBrains Mono", "Lucida Console", "Courier New", monospace;
 }
 
 :root {
@@ -71,6 +71,7 @@ section {
   background-color: var(--black);
   height: 88vh;
   display: flex;
+  padding-bottom: 30px;
 }
 
 section .title {
@@ -253,6 +254,10 @@ section .title span strong::after {
   }
 }
 
+.title a:hover {
+  color: var(--green)
+}
+
 /* Estilo dos botões de toda página */
 
 button {
@@ -272,50 +277,42 @@ button:hover {
   background-color: var(--comment-secondary);
 }
 
-.button-up {
+nav {
   display: flex;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  background-color: var(--black);
-  border-radius: 0.5em;
+  flex-direction: row;
 }
 
-.button-up button {
+nav button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5em;
+  background-color: var(--black);
+  border-radius: 0.5em;
   text-transform: uppercase;
   font-size: 15px;
 }
 
 @media screen and (max-width: 600px) {
-  .button-up button {
-    font-size: 16px;
+  nav button {
+    font-size: 15px;
   }
 }
 
-.button-down {
+footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  margin-top: 16em;
+  background-color: var(--black);
   margin-bottom: 1em;
   font-size: 10px;
 }
 
-.button-down button {
-  background-color: var(--black);
-}
-
-@media screen and (max-width: 600px) {
-  .button-down{
-    font-size: 0.5em;
-    display:flex;
+/* @media screen and (max-width: 600px) {
+  footer {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-}
-
-.title a:hover {
-  color: var(--green)
-}
+} */

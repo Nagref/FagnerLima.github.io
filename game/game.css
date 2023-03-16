@@ -26,17 +26,22 @@
 
 /* Estilizando barras de rolagem no Chrome, Edge e Safari */
 body::-webkit-scrollbar {
-  width: 8px;               /* width of the entire scrollbar */
+  width: 8px;
+  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--black);        /* color of the tracking area */
+  background: var(--black);
+  /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--green);/* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 2px solid var(--green); /* creates padding around scroll thumb */
+  background-color: var(--green);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 2px solid var(--green);
+  /* creates padding around scroll thumb */
 }
 
 
@@ -98,7 +103,7 @@ body {
 .offline.inverted {
   -webkit-filter: invert(100%);
   filter: invert(100%);
-  background-color: var(--green);  
+  background-color: var(--green);
 }
 
 .offline #main-message>p {
@@ -154,28 +159,26 @@ body {
 
 .game {
   display: flex;
-flex-wrap: nowrap;
-flex-direction: row;
-align-items: flex-start;
-justify-content: center;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .game {
+    padding-bottom: 300px;
+  }
 }
 
 h3 {
   color: var(--foreground);
   font-size: 12px;
-  /* margin-block-start: 5em; */
-  /* margin-block-end: 0.5em; */
   max-width: 96%;
-  padding: 0;
-  width: 500px;
+  /* width: 500px; */
   margin-left: 0.5em;
   margin-right: 0.5em;
   background-color: var(--black);
   border-radius: 1em;
   border: 2px solid var(--comment-secondary);
-  /* width: 100%;
-  height: 100%; */
-
 }
 
 p {
@@ -201,46 +204,42 @@ button:hover {
   background-color: var(--comment-secondary);
 }
 
-.button-up {
+nav {
   display: flex;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  background-color: var(--black);
-  border-radius: 0.5em;
+  flex-direction: row;
 }
 
-.button-up button {
+nav button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5em;
+  background-color: var(--black);
+  border-radius: 0.5em;
   text-transform: uppercase;
   font-size: 15px;
 }
 
 @media screen and (max-width: 600px) {
-  .button-up button {
-    font-size: 16px;
+  nav button {
+    font-size: 15px;
   }
 }
 
-.button-down {
+footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  margin-top: 40em;
+  background-color: var(--black);
   margin-bottom: 1em;
   font-size: 10px;
 }
 
-.button-down button {
-  background-color: var(--black);
-}
-
-@media screen and (max-width: 600px) {
-  .button-down{
-    font-size: 0.5em;
-    display:flex;
+/* @media screen and (max-width: 600px) {
+  footer {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-}
+} */
