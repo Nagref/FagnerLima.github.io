@@ -257,6 +257,13 @@ details p {
   padding-left: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  details p {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 summary {
   display: flex;
   background: var(--pink);
