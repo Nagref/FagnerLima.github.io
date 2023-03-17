@@ -142,7 +142,7 @@ ul {
 .label {
   cursor: pointer;
   background: var(--black);
-  padding: 0.8rem 1rem;
+  padding:  0.5rem;
   width: 100%;
   display: flex;
   justify-self: center;
@@ -204,8 +204,15 @@ ul {
 }
 
 .dropdown {
+  position: relative;
+  font-size: 12px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40%;
+  margin-right: 40%;
   padding-bottom: 30em;
 }
+
 
 .dropdown:hover>.items {
   opacity: 1;
@@ -323,3 +330,46 @@ footer {
     align-items: center;
   }
 } */
+details {
+  display: block;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;;
+  margin: 10px 10px;
+}
+
+details p {
+  padding-left: 10px;
+}
+
+summary {
+  display: flex;
+  background: var(--pink);
+  background: radial-gradient(circle, var(--pink) 0%, var(--purple) 100%);
+  color: var(--black);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:before {
+  content: "+";
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 5px;
+  padding: 0;
+  width: 50px;
+  text-align: center;
+}
+
+details[open] summary:before {
+  content: "x";
+}

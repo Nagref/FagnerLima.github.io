@@ -20,17 +20,22 @@
 
 /* Estilizando barras de rolagem no Chrome, Edge e Safari */
 body::-webkit-scrollbar {
-  width: 8px;               /* width of the entire scrollbar */
+  width: 8px;
+  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--black);        /* color of the tracking area */
+  background: var(--black);
+  /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--pink);/* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 2px solid var(--pink);  /* creates padding around scroll thumb */
+  background-color: var(--pink);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 2px solid var(--pink);
+  /* creates padding around scroll thumb */
 }
 
 a {
@@ -87,7 +92,10 @@ section .title {
   section .title {
     max-width: 60%;
     width: 100%;
-  };
+  }
+
+  ;
+
   section .title span {
     font-size: 2em;
   }
@@ -101,6 +109,7 @@ section .title span {
   transform: translateX(-100%);
   animation: byBottom 1s ease both;
 }
+
 @media screen and (max-width: 600px) {
   section .title span {
     font-size: 2.5em;
@@ -316,3 +325,46 @@ footer {
     align-items: center;
   }
 } */
+details {
+  display: block;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;;
+  margin: 10px 10px;
+}
+
+details p {
+  padding-left: 10px;
+}
+
+summary {
+  display: flex;
+  background: var(--pink);
+  background: radial-gradient(circle, var(--purple) 0%, var(--pink) 100%);
+  color: var(--black);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:before {
+  content: "+";
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 5px;
+  padding: 0;
+  width: 50px;
+  text-align: center;
+}
+
+details[open] summary:before {
+  content: "x";
+}
