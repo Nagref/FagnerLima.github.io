@@ -46,9 +46,9 @@ a {
 body {
   background-color: var(--black);
   text-align: center;
-  border-image: linear-gradient(var(--cyan), var(--purple)) 30;
+  /* border-image: linear-gradient(var(--cyan), var(--purple)) 30;
   border-width: 2px;
-  border-style: solid;
+  border-style: solid; */
   /* border-radius: 10px; */
   min-height: 100vh;
 }
@@ -111,6 +111,7 @@ h1 {
   color: var(--foreground);
   background-size: 100%;
   font-size: 48px;
+  font-family: sans-serif, monospace;
   line-height: 50px;
   font-weight: bold;
   max-width: 100%;
@@ -162,6 +163,7 @@ button {
   background-color: var(--black);
   color: var(--selection-secondary);
   font-weight: bold;
+  font-family: sans-serif, monospace;
   border: none;
   justify-content: center;
   padding: 6px;
@@ -239,7 +241,7 @@ details h2 {
 summary {
   display: flex;
   background: var(--pink);
-  background: radial-gradient(circle, var(--purple) 0%, var(--cyan) 100%);
+  background: radial-gradient(circle, var(--cyan) 0%, var(--purple) 100%);
   color: var(--black);
   border-radius: 8px;
   padding: 10px;

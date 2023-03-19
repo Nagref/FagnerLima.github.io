@@ -64,6 +64,7 @@ strong {
   color: var(--foreground);
   background-size: 100%;
   font-size: 48px;
+  font-family: sans-serif, monospace;
   line-height: 50px;
   font-weight: bold;
   align-items: center;
@@ -85,9 +86,9 @@ a {
 body {
   background-color: var(--black);
   text-align: center;
-  border-image: linear-gradient(var(--green), var(--purple)) 30;
+  /* border-image: linear-gradient(var(--green), var(--purple)) 30;
   border-width: 2px;
-  border-style: solid;
+  border-style: solid; */
   /* border-radius: 10px; */
   min-height: 100vh;
 }
@@ -247,6 +248,7 @@ details {
   display: block;
   width: auto;
   text-transform: uppercase;
+  font-family: sans-serif, monospace;
   font-size: 15px;
   font-weight: bold;
   margin: 10px 10px;

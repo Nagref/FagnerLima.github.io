@@ -1,5 +1,5 @@
 * {
-  font-family: "JetBrains Mono", "Lucida Console", "Courier New", monospace;
+  font-family: "JetBrains Mono", "Lucida Console", "Courier New", sans-serif, monospace;
 }
 
 :root {
@@ -30,11 +30,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--pink);
+  background-color: var(--purple);
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
-  border: 2px solid var(--pink);
+  border: 2px solid var(--purple);
   /* creates padding around scroll thumb */
 }
 
@@ -46,9 +46,9 @@ a {
 body {
   background-color: var(--black);
   text-align: center;
-  border-image: linear-gradient(var(--pink), var(--purple)) 30;
+  /* border-image: linear-gradient(var(--pink), var(--purple)) 30;
   border-width: 2px;
-  border-style: solid;
+  border-style: solid; */
   /* border-radius: 10px; */
   min-height: 100vh;
 }
@@ -65,7 +65,7 @@ body {
 }
 
 .title {
-  font-family: Jetbrains Mono;
+  font-family: sans-serif, monospace;
   font-weight: bold;
   font-size: larger;
   text-transform: uppercase;
@@ -80,6 +80,7 @@ body {
 
 section {
   background-color: var(--black);
+  font-family: sans-serif, monospace;
   height: 88vh;
   display: flex;
   padding-bottom: 30px;
@@ -96,11 +97,9 @@ section .title {
 
 @media screen and (max-width: 600px) {
   section .title {
-    max-width: 60%;
+    max-width: 100%;
     width: 100%;
   }
-
-  ;
 
   section .title span {
     font-size: 2em;
@@ -275,6 +274,7 @@ button {
   background-color: var(--black);
   color: var(--selection-secondary);
   font-weight: bold;
+  font-family: sans-serif, monospace;
   border: none;
   justify-content: center;
   padding: 6px;
@@ -291,6 +291,7 @@ button:hover {
 nav {
   display: flex;
   flex-direction: row;
+  font-family: sans-serif, monospace;
 }
 
 nav button {
