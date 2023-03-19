@@ -65,7 +65,7 @@ body {
 }
 
 .title {
-  font-family: sans-serif, monospace;
+  font-family: JetBrains mono, sans-serif, monospace;
   font-weight: bold;
   font-size: larger;
   text-transform: uppercase;
@@ -80,7 +80,7 @@ body {
 
 section {
   background-color: var(--black);
-  font-family: sans-serif, monospace;
+  font-family: JetBrains mono, sans-serif, monospace;
   height: 88vh;
   display: flex;
   padding-bottom: 30px;

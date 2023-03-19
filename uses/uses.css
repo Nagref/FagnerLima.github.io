@@ -89,7 +89,8 @@ body {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;;
+  flex-direction: column;
+  ;
   align-items: flex-start;
   justify-content: center;
   margin-left: 5em;
@@ -111,7 +112,7 @@ h1 {
   color: var(--foreground);
   background-size: 100%;
   font-size: 48px;
-  font-family: sans-serif, monospace;
+  font-family: JetBrains mono, sans-serif, monospace;
   line-height: 50px;
   font-weight: bold;
   max-width: 100%;
@@ -222,6 +223,7 @@ details {
   width: auto;
   text-transform: uppercase;
   font-size: 15px;
+  font-family: sans-serif, monospace;
   font-weight: bold;
   margin: 10px 10px;
   position: absolute;

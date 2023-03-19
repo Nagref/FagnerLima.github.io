@@ -56,7 +56,7 @@ body::-webkit-scrollbar-thumb {
   margin-right: 5px;
 }
 
-strong {
+h1 {
   background-image: linear-gradient(135deg, var(--purple) 2%, var(--green) 9%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -64,7 +64,7 @@ strong {
   color: var(--foreground);
   background-size: 100%;
   font-size: 48px;
-  font-family: sans-serif, monospace;
+  font-family: JetBrains mono, sans-serif, monospace;
   line-height: 50px;
   font-weight: bold;
   align-items: center;

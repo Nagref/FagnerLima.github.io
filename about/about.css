@@ -176,7 +176,7 @@ body {
 }
 
 h1 .strong {
-  font-family: sans-serif, monospace;
+  font-family: JetBrains mono, sans-serif, monospace;
 }
 
 h1 {
@@ -188,11 +188,12 @@ h1 {
   color: var(--foreground);
   background-size: 100%;
   font-size: 48px;
-  font-family: JetBrains mono ,sans-serif, monospace;
+  font-family: JetBrains mono, sans-serif, monospace;
   line-height: 50px;
   font-weight: bold;
   max-width: 100%;
   padding: 0;
+  display: flex;
   width: 600px;
   margin-left: auto;
   margin-right: auto;
