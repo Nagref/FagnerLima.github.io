@@ -231,11 +231,15 @@ h1 {
 p {
   margin: 0.4em;
   padding: 1em;
+  font-size: 14px;
+  font-family: JetBrains mono, sans-serif, monospace;
 }
 
 li {
   margin: 0.4em;
   padding: 1em;
+  font-size: 14px;
+  font-family: JetBrains mono, sans-serif, monospace;
 }
 
 @media screen and (max-width: 600px) {
@@ -251,6 +255,9 @@ li {
 
 h3 strong {
   color: var(--purple);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: JetBrains mono, sans-serif, monospace;
 }
 
 /* Estilo dos botões de toda página */

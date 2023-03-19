@@ -133,6 +133,7 @@ p {
   color: var(--cyan);
   font-family: JetBrains mono, sans-serif, monospace;
   font-size: 16px;
+  font-weight: bold;
   display: flex;
   text-align: justify;
   margin-top: 50px;
@@ -145,10 +146,10 @@ li {
   font-family: JetBrains mono, sans-serif, monospace;
   text-align: justify;
   /* display: list-item; */
-  font-weight: bold;
+  font-weight: bolder;
   border-radius: 30px;
-  margin: 1em;
-  font-size: 12px;
+  margin: 4px;
+  font-size: 14px;
 }
 
 li:hover {
