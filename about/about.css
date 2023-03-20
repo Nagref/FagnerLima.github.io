@@ -107,24 +107,16 @@ body {
     margin-block-start: 2em;
     margin-block-end: 1em;
   }
-  .avatar h3 img {
-    width: 1px;
-    height: 1px;
 
-  }
   .avatar h3 {
-   display:flex;
-
+    display: none;
   }
-  .avatar strong {
-    display: inline;
-   }
 
 }
 
 .avatar h3 img {
-  width: 2rem;
-  height: 2rem;
+  width: 30px;
+  height: 30px;
 }
 
 h1 {
