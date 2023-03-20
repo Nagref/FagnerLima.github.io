@@ -69,21 +69,26 @@ body {
   font-weight: bold;
   font-size: larger;
   text-transform: uppercase;
+  /* -webkit-text-stroke: 0.5px var(--black); */
   /* border: 4px solid var(--pink);
   border-radius: 10px;
   padding: 0.5em; */
 }
 
 .title a:hover {
-  color: var(--green)
+  background-image: linear-gradient(135deg, var(--pink) 0%, var(--purple) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 section {
   background-color: var(--black);
   font-family: JetBrains mono, sans-serif, monospace;
-  height: 88vh;
+  height: 50vh;
   display: flex;
-  padding-bottom: 30px;
+  padding-top: 20vh;
+  padding-bottom: 24vh;
 }
 
 section .title {
@@ -104,11 +109,14 @@ section .title {
   section .title span {
     font-size: 2em;
   }
+  section {
+    padding-top: 100px;
+  }
 }
 
 section .title span {
   display: inline-block;
-  font-size: 3.5em;
+  font-size: 4em;
   color: var(--foreground);
   width: 100%;
   transform: translateX(-100%);
@@ -126,25 +134,34 @@ section .title span:last-child {
 }
 
 section .title span strong {
+  /* -webkit-text-stroke: 0.5px var(--foreground); */
   position: relative;
   display: inline-block;
-  background-image: linear-gradient(135deg, var(--pink) 0%, var(--purple) 100%);
+  background-image: linear-gradient(135deg, var(--red) 40%, var(--purple) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--foreground);
 }
 
-section .title span strong::after {
+/* section .title span strong::after {
   content: "";
   height: 2px;
-  background-color: var(--purple);
+  padding-inline-end: 88vh;
+  background-image: linear-gradient(135deg, var(--red) 0%, var(--purple) 100%);
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
-  animation: linkAfter 0.5s 1s ease both;
+  margin: auto;
+  animation: linkAfter 2s 1s ease both;
 }
+
+@media screen and (max-width: 600px) {
+  section .title span strong::after {
+    padding-inline-end: 10vh;
+  }
+} */
 
 /* Animação da abertura da página */
 
@@ -353,7 +370,7 @@ details p {
 summary {
   display: flex;
   background: var(--pink);
-  background: radial-gradient(circle, var(--purple) 0%, var(--pink) 100%);
+  background: radial-gradient(circle, var(--purple) 0%, var(--red) 100%);
   color: var(--black);
   border-radius: 8px;
   padding: 10px;

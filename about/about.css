@@ -30,11 +30,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--purple);
+  background-color: var(--orange);
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
-  border: 2px solid var(--purple);
+  border: 2px solid var(--orange);
   /* creates padding around scroll thumb */
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 ::selection {
-  background: var(--pink) !important;
+  background: var(--orange) !important;
   color: var(--black) !important;
   text-shadow: 0 0 0 var(--black);
 }
@@ -181,7 +181,7 @@ h1 .strong {
 
 h1 {
   /* grid-area: title; */
-  background-image: linear-gradient(150deg, var(--purple) 5%, var(--pink) 30%);
+  background-image: linear-gradient(150deg, var(--orange) 5%, var(--pink) 30%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -254,7 +254,7 @@ li {
 
 
 h3 strong {
-  color: var(--purple);
+  color: var(--pink);
   font-size: 16px;
   font-weight: bold;
   font-family: JetBrains mono, sans-serif, monospace;
@@ -344,7 +344,7 @@ details h2 {
 summary {
   display: flex;
   background: var(--pink);
-  background: radial-gradient(circle, var(--purple) 0%, var(--pink) 100%);
+  background: radial-gradient(circle, var(--pink) 0%, var(--orange) 100%);
   color: var(--black);
   border-radius: 8px;
   padding: 10px;
