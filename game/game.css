@@ -57,7 +57,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1 {
-  background-image: linear-gradient(135deg, var(--purple) 2%, var(--green) 9%);
+  background-image: linear-gradient(135deg, var(--purple) 20%, var(--green) 90%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -67,14 +67,8 @@ h1 {
   font-family: JetBrains mono, sans-serif, monospace;
   line-height: 50px;
   font-weight: bold;
-  align-items: center;
-  justify-content: flex-start;
-  display: flex;
   max-width: 100%;
-  padding: 0;
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 10px;
   margin-block-start: 100px;
 }
 
@@ -86,7 +80,6 @@ a {
 body {
   background-color: var(--black);
   text-align: center;
-  min-height: 100vh;
 }
 
 /* Day & Night */
