@@ -30,11 +30,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--purple);
+  background-color: var(--comment-secondary);
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
-  border: 2px solid var(--purple);
+  border: 2px solid var(--comment-secondary);
   /* creates padding around scroll thumb */
 }
 
@@ -46,10 +46,6 @@ a {
 body {
   background-color: var(--black);
   text-align: center;
-  /* border-image: linear-gradient(var(--purple), var(--pink)) 30;
-  border-width: 2px;
-  border-style: solid; */
-  /* border-radius: 10px; */
   min-height: 100vh;
 }
 
@@ -114,7 +110,6 @@ span .label {
   color: var(--foreground);
   display: grid;
   place-items: center;
-  /* height: 100vh; */
 }
 
 ul {
@@ -158,8 +153,8 @@ ul {
 
 @media screen and (max-width: 600px) {
   .label {
-  padding: 10px;
-  padding-right: 100px;
+  padding: 5px;
+  justify-content: flex-end;
   }
 }
 
@@ -329,16 +324,10 @@ footer {
   max-width: 100%;
   background-color: var(--black);
   margin-bottom: 1em;
+  margin-top: 6rem;
   font-size: 10px;
 }
 
-/* @media screen and (max-width: 600px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-} */
 details {
   display: block;
   width: auto;
@@ -351,29 +340,22 @@ details {
 
 details p {
   padding-left: 10px;
-}
-
-@media screen and (max-width: 600px) {
-  details p {
-    display: flex;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-direction: row;
 }
 
 summary {
   display: flex;
-  background: var(--pink);
-  background: radial-gradient(circle, var(--pink) 0%, var(--purple) 100%);
-  color: var(--black);
+  background: var(--black);
+  background: radial-gradient(circle, var(--black) 0%, var(--comment-secondary) 100%);
+  color: var(--selection-secondary);
   border-radius: 8px;
   padding: 10px;
   cursor: pointer;
   font-weight: 600;
-  font-family: sans-serif, monospace;
   justify-content: flex-start;
   align-items: center;
 }
-
 summary::-webkit-details-marker {
   display: none;
 }

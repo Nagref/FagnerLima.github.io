@@ -30,11 +30,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--red);
+  background-color: var(--comment-secondary);
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
-  border: 2px solid var(--red);
+  border: 2px solid var(--comment-secondary);
   /* creates padding around scroll thumb */
 }
 
@@ -46,10 +46,6 @@ a {
 body {
   background-color: var(--black);
   text-align: center;
-  /* border-image: linear-gradient(var(--red), var(--purple)) 30;
-  border-width: 2px;
-  border-style: solid; */
-  /* border-radius: 10px; */
   min-height: 100vh;
 }
 
@@ -106,9 +102,6 @@ h1 {
   margin-top: 5rem;
   overflow: hidden;
   border-radius: 1em;
-  /* border-color: var(--purple);
-  border-width: medium;
-  border-style: solid; */
   margin-left: 30em;
   margin-right: 30em;
 }
@@ -125,7 +118,6 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* font-size: 0.9em; */
   font-weight: bold;
 }
 
@@ -203,13 +195,6 @@ footer {
   font-size: 10px;
 }
 
-/* @media screen and (max-width: 600px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-} */
 details {
   display: block;
   width: auto;
@@ -223,20 +208,15 @@ details {
 
 details p {
   padding-left: 10px;
-}
-
-@media screen and (max-width: 600px) {
-  details p {
-    display: flex;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-direction: row;
 }
 
 summary {
   display: flex;
-  background: var(--pink);
-  background: radial-gradient(circle, var(--purple) 0%, var(--red) 100%);
-  color: var(--black);
+  background: var(--black);
+  background: radial-gradient(circle, var(--black) 0%, var(--comment-secondary) 100%);
+  color: var(--selection-secondary);
   border-radius: 8px;
   padding: 10px;
   cursor: pointer;

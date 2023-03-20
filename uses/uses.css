@@ -30,11 +30,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--cyan);
+  background-color: var(--comment-secondary);
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
-  border: 2px solid var(--cyan);
+  border: 2px solid var(--comment-secondary);
   /* creates padding around scroll thumb */
 }
 
@@ -46,11 +46,6 @@ a {
 body {
   background-color: var(--black);
   text-align: center;
-  /* border-image: linear-gradient(var(--cyan), var(--purple)) 30;
-  border-width: 2px;
-  border-style: solid; */
-  /* border-radius: 10px; */
-  min-height: 100vh;
 }
 
 ::selection {
@@ -85,20 +80,23 @@ body {
 }
 
 .list {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-left: 5em;
+  margin-left: 1em;
+  padding: 10px;
+  border-radius: 1em;
+  border: 2px solid var(--comment-secondary);
 }
 
 @media screen and (max-width: 800px) {
   .list {
     flex-direction: column;
-    margin-left: 3em;
+    margin-left: 6px;
     margin-right: 0;
   }
 }
@@ -115,10 +113,7 @@ h1 {
   line-height: 50px;
   font-weight: bold;
   max-width: 100%;
-  padding: 0;
-  width: 110vh;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 10px;
   margin-block-start: 100px;
 }
 
@@ -130,15 +125,15 @@ h1 {
 }
 
 p {
-  color: var(--cyan);
+  color: var(--comment);
   font-family: JetBrains mono, sans-serif, monospace;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: bolder;
   display: flex;
   text-align: justify;
-  margin-top: 50px;
+  margin-top: 8px;
   max-width: 100%;
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 li {
@@ -155,7 +150,6 @@ li {
 li:hover {
   color: var(--purple);
   text-align: justify;
-  /* display: list-item; */
   font-weight: bold;
 }
 
@@ -207,18 +201,11 @@ footer {
   justify-content: center;
   max-width: 100%;
   background-color: var(--black);
-  padding-top: 10em;
+  padding-top: 30em;
   margin-bottom: 1em;
   font-size: 10px;
 }
 
-/* @media screen and (max-width: 600px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-} */
 details {
   display: block;
   width: auto;
@@ -232,20 +219,15 @@ details {
 
 details h2 {
   padding-left: 10px;
-}
-
-@media screen and (max-width: 600px) {
-  details h2 {
-    display: flex;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-direction: row;
 }
 
 summary {
   display: flex;
-  background: var(--pink);
-  background: radial-gradient(circle, var(--cyan) 0%, var(--purple) 100%);
-  color: var(--black);
+  background: var(--black);
+  background: radial-gradient(circle, var(--black) 0%, var(--comment-secondary) 100%);
+  color: var(--selection-secondary);
   border-radius: 8px;
   padding: 10px;
   cursor: pointer;

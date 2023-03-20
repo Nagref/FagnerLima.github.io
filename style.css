@@ -30,11 +30,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--purple);
+  background-color: var(--comment-secondary);
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
-  border: 2px solid var(--purple);
+  border: 2px solid var(--comment-secondary);
   /* creates padding around scroll thumb */
 }
 
@@ -46,10 +46,6 @@ a {
 body {
   background-color: var(--black);
   text-align: center;
-  /* border-image: linear-gradient(var(--pink), var(--purple)) 30;
-  border-width: 2px;
-  border-style: solid; */
-  /* border-radius: 10px; */
   min-height: 100vh;
 }
 
@@ -68,23 +64,16 @@ body {
   font-family: JetBrains mono, sans-serif, monospace;
   font-weight: bold;
   font-size: larger;
-  /* text-transform: uppercase; */
-  /* -webkit-text-stroke: 0.5px var(--black); */
-  /* border: 4px solid var(--pink);
-  border-radius: 10px;
-  padding: 0.5em; */
 }
 
 .title a:hover {
-  background-image: linear-gradient(135deg, var(--red) 0%, var(--purple) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--green);
 }
 
 section {
   background-color: var(--black);
   font-family: JetBrains mono, sans-serif, monospace;
+  letter-spacing: 0;
   height: 50vh;
   display: flex;
   padding-top: 20vh;
@@ -109,6 +98,7 @@ section .title {
   section .title span {
     font-size: 2em;
   }
+
   section {
     padding-top: 100px;
   }
@@ -144,6 +134,7 @@ section .title span strong {
   -webkit-text-fill-color: transparent;
   color: var(--foreground);
 }
+
 section .title span strong2 {
   /* -webkit-text-stroke: 0.5px var(--foreground); */
   position: relative;
@@ -155,25 +146,6 @@ section .title span strong2 {
   -webkit-text-fill-color: transparent;
   color: var(--foreground);
 }
-
-/* section .title span strong::after {
-  content: "";
-  height: 2px;
-  padding-inline-end: 88vh;
-  background-image: linear-gradient(135deg, var(--red) 0%, var(--purple) 100%);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  margin: auto;
-  animation: linkAfter 2s 1s ease both;
-}
-
-@media screen and (max-width: 600px) {
-  section .title span strong::after {
-    padding-inline-end: 10vh;
-  }
-} */
 
 /* Animação da abertura da página */
 
@@ -350,13 +322,6 @@ footer {
   font-size: 10px;
 }
 
-/* @media screen and (max-width: 600px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-} */
 details {
   display: block;
   width: auto;
@@ -369,21 +334,15 @@ details {
 
 details p {
   padding-left: 10px;
+  display: flex;
+  flex-direction: row;
 }
-
-@media screen and (max-width: 600px) {
-  details p {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
 
 summary {
   display: flex;
-  background: var(--pink);
-  background: radial-gradient(circle, var(--purple) 0%, var(--red) 100%);
-  color: var(--black);
+  background: var(--black);
+  background: radial-gradient(circle, var(--black) 0%, var(--comment-secondary) 100%);
+  color: var(--selection-secondary);
   border-radius: 8px;
   padding: 10px;
   cursor: pointer;
