@@ -54,7 +54,7 @@ body {
 }
 
 ::selection {
-  background: var(--pink) !important;
+  background: var(--purple) !important;
   color: var(--black) !important;
   text-shadow: 0 0 0 var(--black);
 }
@@ -76,7 +76,7 @@ body {
 }
 
 .title a:hover {
-  background-image: linear-gradient(135deg, var(--pink) 0%, var(--purple) 100%);
+  background-image: linear-gradient(135deg, var(--red) 0%, var(--purple) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
