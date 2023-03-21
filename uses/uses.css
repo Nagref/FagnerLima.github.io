@@ -225,11 +225,10 @@ details h2 {
 
 summary {
   display: flex;
-  background: var(--black);
-  background: radial-gradient(circle, var(--black) 0%, var(--comment-secondary) 100%);
-  color: var(--selection-secondary);
-  border-radius: 8px;
-  padding: 10px;
+  background: var(--comment-secondary);
+  color: var(--foreground);
+  border-radius: 6px;
+  padding: 6px;
   cursor: pointer;
   font-weight: 600;
   justify-content: flex-start;
@@ -251,5 +250,5 @@ summary:before {
 }
 
 details[open] summary:before {
-  content: "";
+  content: "===";
 }
