@@ -81,8 +81,6 @@ section {
 }
 
 section .title {
-  /* max-width: 60%;
-  width: 100%; */
   align-self: center;
   transform: translateY(-50px);
   margin: 0 auto;
