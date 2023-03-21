@@ -115,8 +115,6 @@ body {
     display: flex;
     margin-block-start: 2em;
     margin-block-end: 1em;
-    width: 23rem;
-    height: 23rem;
   }
 
   .avatar h3 {
