@@ -49,7 +49,7 @@ body {
 }
 
 ::selection {
-  background: var(--orange) !important;
+  background: var(--pink) !important;
   color: var(--black) !important;
   text-shadow: 0 0 0 var(--black);
 }
