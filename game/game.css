@@ -162,7 +162,7 @@ body {
 h3 {
   color: var(--foreground);
   font-family: JetBrains mono, sans-serif, monospace;
-  font-size: 12px;
+  font-size: 14px;
   max-width: 96%;
   margin-left: 0.5em;
   margin-right: 0.5em;

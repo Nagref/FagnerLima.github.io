@@ -60,42 +60,37 @@ body {
 }
 
 .about-container {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: right;
-  margin-block-start: 0;
-  margin-block-end: 1em;
+  padding: 6px;
   background-color: var(--black);
 }
 
 @media screen and (max-width: 800px) {
   .about-container {
     flex-direction: column;
+    padding: 0;
     margin-left: 0;
     margin-right: 0;
   }
 }
 
 .list {
-  width: 90%;
-  height: 100%;
+  width: 40%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-left: 1em;
   padding: 10px;
-  border-radius: 1em;
-  border: 2px solid var(--comment-secondary);
 }
 
 @media screen and (max-width: 800px) {
   .list {
     flex-direction: column;
+    width: 100%;
     margin-left: 6px;
     margin-right: 0;
   }
@@ -133,7 +128,6 @@ p {
   text-align: justify;
   margin-top: 8px;
   max-width: 100%;
-  /* padding: 1em; */
 }
 
 li {
@@ -151,6 +145,61 @@ li:hover {
   color: var(--purple);
   text-align: justify;
   font-weight: bold;
+}
+
+/* Donut javascript configurations */
+
+.container {
+  background-image: linear-gradient(135deg, var(--purple) 15%, var(--cyan) 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  overflow: hidden;
+  border-radius: 1em;
+  margin-left: 30em;
+  margin-right: 30em;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.center {
+  background-image: linear-gradient(135deg, var(--purple) 15%, var(--cyan) 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.engineer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 300px;
+}
+
+h3eng {
+  color: var(--foreground);
+  font-size: 14px;
+  max-width: 96%;
+  padding: 0;
+  width: 500px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  background-color: var(--black);
+  border-radius: 1em;
+  border: 2px solid var(--comment-secondary);
+}
+
+peng {
+  margin: 1em;
 }
 
 /* Estilo dos botões de toda página */
@@ -201,7 +250,6 @@ footer {
   justify-content: center;
   max-width: 100%;
   background-color: var(--black);
-  padding-top: 30em;
   margin-bottom: 1em;
   font-size: 10px;
 }
