@@ -119,6 +119,18 @@ h1 {
   }
 }
 
+h2 p {
+  color: var(--foreground);
+  font-family: JetBrains mono, sans-serif, monospace;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  padding: 10px;
+}
+
 p {
   color: var(--comment);
   font-family: JetBrains mono, sans-serif, monospace;
@@ -179,6 +191,7 @@ li:hover {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
+
 .engineer {
   display: flex;
   justify-content: center;
