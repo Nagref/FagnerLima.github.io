@@ -141,12 +141,14 @@ ul {
 .label {
   cursor: pointer;
   background: var(--black);
-  padding: 0.5rem;
+  padding: 1rem;
   width: 100%;
+  height: 100%;
   display: flex;
   justify-self: center;
   align-items: center;
   box-sizing: border-box;
+  margin-top: 10px;
   transition: all 0.3s;
   border-radius: 1em;
   color: var(--foreground);
@@ -156,8 +158,8 @@ ul {
 
 @media screen and (max-width: 600px) {
   .label {
-    padding: 10px;
-    justify-content: flex-end;
+    padding: 1rem;
+    justify-content: space-evenly;
   }
 }
 
@@ -165,7 +167,8 @@ ul {
   color: var(--foreground);
   display: flex;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
+  margin-top: 10px;
   text-decoration: none;
   transition: all 0.2s;
   border-radius: 1em;
@@ -190,7 +193,6 @@ ul {
   min-width: 100%;
   height: 0;
   position: absolute;
-  top: 48px;
   transform-origin: top;
   transform: scaleY(0);
   transition: transform 0.3s;
