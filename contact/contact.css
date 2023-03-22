@@ -109,8 +109,10 @@ span .label {
   margin: 0;
   background: var(--black);
   color: var(--foreground);
-  display: grid;
+  display: flex;
+  align-items: center;
   place-items: center;
+  line-height: 0;
 }
 
 ul {
@@ -154,7 +156,7 @@ ul {
 
 @media screen and (max-width: 600px) {
   .label {
-    padding: 5px;
+    padding: 10px;
     justify-content: flex-end;
   }
 }
