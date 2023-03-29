@@ -1,0 +1,14 @@
+{
+  "name": "nagrefprofile",
+  "version": "1.0.0",
+  "description": "I'm a Full Stack Developer, <br/> passionate about solving problems using programming. <br/> Born in Rio de Janeiro, Brazil.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fagner Lima",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
