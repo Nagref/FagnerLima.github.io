@@ -10,6 +10,8 @@
   <title>Fagner Lima</title>
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16x16.png">
   <meta name="theme-color" content="#454158">
@@ -19,17 +21,39 @@
 </head>
 
 <body>
-  <%- include ("../partials/nav"); %>
-    <section>
-      <div class="title"><span><a>Fagner Lima</a></span>
-        <span><strong>Software Engineer</br>
-            <strong2>Passionate about solving problems
-              using programming.</strong2>
-          </strong></span>
-      </div>
-    </section>
 
-    <%- include ("../partials/footer"); %>
+  <nav><!-- Botões de navegação no topo da página -->
+    <details>
+      <summary></summary>
+      <p>
+        <button><a href="/">Home</a></button>
+        <button><a href="/about">About</a></button>
+        <button><a href="/uses">Uses</a></button>
+        <button><a href="/game">Game</a></button>
+        <button><a href="/contact">Contact</a></button>
+      </p>
+    </details>
+  </nav>
+  <section>
+    <div class="title"><span><a>Fagner Lima</a></span>
+      <span><strong>Software Engineer</br>
+          <strong2>Passionate about solving problems
+            using programming.</strong2>
+        </strong></span>
+    </div>
+  </section>
+
+
+  <footer>
+    <!-- Botões de links do fundo da página -->
+    <button><a href="https://instagram.com/nagref.jpeg" target="_blank"><i
+          class="fa-brands fa-instagram"></i>Instagram</a></button>
+    <button><a href="https://twitter.com/fagnerrlima" target="_blank"><i
+          class="fa-brands fa-twitter"></i>Twitter</a></button>
+    <button><a href="https://www.linkedin.com/in/fagnerrlima" target="_blank"><i
+          class="fa-brands fa-linkedin"></i>LinkedIn</a></button>
+    <button><a href="https://github.com/Nagref" target="_blank"><i class="fa-brands fa-github"></i>Github</a></button>
+  </footer>
 
 
 </body>
