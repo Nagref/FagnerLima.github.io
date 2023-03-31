@@ -1,0 +1,28 @@
+button {
+  background-color: var(--black);
+  color: var(--selection-secondary);
+  font-weight: bold;
+  font-family: sans-serif, monospace;
+  border: none;
+  justify-content: center;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+button:hover {
+  color: var(--foreground);
+  background-color: var(--comment-secondary);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  background-color: var(--black);
+  margin-bottom: 1em;
+  font-size: 10px;
+}

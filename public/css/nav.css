@@ -1,0 +1,87 @@
+/* Estilo dos botões de toda página */
+
+button {
+  background-color: var(--black);
+  color: var(--selection-secondary);
+  font-weight: bold;
+  font-family: sans-serif, monospace;
+  border: none;
+  justify-content: center;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+button:hover {
+  color: var(--foreground);
+  background-color: var(--comment-secondary);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  font-family: sans-serif, monospace;
+}
+
+nav button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5em;
+  background-color: var(--black);
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  nav button {
+    font-size: 15px;
+  }
+}
+
+details {
+  display: block;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 10px;
+  position: absolute;
+}
+
+details p {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+summary {
+  display: flex;
+  background: var(--comment-secondary);
+  color: var(--foreground);
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:before {
+  content: "FL";
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 5px;
+  padding: 0;
+  width: 20px;
+  text-align: center;
+}
+
+details[open] summary:before {
+  content: "===";
+}

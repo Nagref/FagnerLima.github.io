@@ -1,14 +1,20 @@
 {
-  "name": "nagrefprofile",
+  "name": "nagrefProfile",
   "version": "1.0.0",
   "description": "I'm a Full Stack Developer, <br/> passionate about solving problems using programming. <br/> Born in Rio de Janeiro, Brazil.",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "Fagner Lima",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
