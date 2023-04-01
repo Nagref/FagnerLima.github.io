@@ -58,8 +58,8 @@ details p {
 
 summary {
   display: flex;
-  background: var(--comment-secondary);
-  color: var(--foreground);
+  color: var(--selection-secondary);
+  background: var(--black);
   border-radius: 6px;
   padding: 6px;
   cursor: pointer;
@@ -70,6 +70,12 @@ summary {
 
 summary::-webkit-details-marker {
   display: none;
+}
+
+summary:hover {
+  background: var(--comment-secondary);
+  color: var(--foreground);
+  border-radius: 6px;
 }
 
 summary:before {
