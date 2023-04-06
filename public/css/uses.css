@@ -88,7 +88,7 @@ h2 p {
 }
 
 p {
-  color: var(--comment);
+  color: var(--cyan);
   font-family: JetBrains mono, sans-serif, monospace;
   font-size: 18px;
   font-weight: bolder;
