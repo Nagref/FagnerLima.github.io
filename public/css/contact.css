@@ -127,13 +127,13 @@ ul {
   text-decoration: none;
   transition: all 0.2s;
   border-radius: 1em;
-  border: 2px solid var(--selection-secondary);
+  border: 2px solid var(--foreground);
   font-weight: bold;
 }
 
 .items a:hover {
   border-left: 5px solid var(--foreground);
-  border: 2px solid var(--foreground);
+  border-bottom: 5px solid var(--foreground);
   background: var(--comment-secondary);
   color: var(--foreground);
 }
@@ -186,8 +186,10 @@ ul {
 }
 
 .dropdown:hover>.label {
-  background: var(--foreground);
-  color: var(--black);
+  background: var(--comment-secondary);
+  color: var(--foreground);
+  border-left: 5px solid var(--foreground);
+  border-bottom: 5px solid var(--foreground);
 }
 
 /* Efeito de Glitch do avatar da página */
