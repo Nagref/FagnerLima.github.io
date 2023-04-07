@@ -80,7 +80,7 @@ body {
 
 
 h1 {
-  background-image: linear-gradient(135deg, var(--orange) 0%, var(--pink) 20%);
+  background-image: linear-gradient(155deg, var(--orange) 10%, var(--pink) 40%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
