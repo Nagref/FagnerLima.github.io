@@ -33,13 +33,14 @@ img {
 }
 
 h1 {
-  background-image: linear-gradient(135deg, var(--purple) 15%, var(--pink) 75%);
+  background-image: linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--foreground);
   background-size: 100%;
   font-size: 48px;
+  letter-spacing: -3px;
   font-family: JetBrains mono, sans-serif, monospace;
   line-height: 50px;
   font-weight: bold;
