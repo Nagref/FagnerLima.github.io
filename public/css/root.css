@@ -3,12 +3,13 @@
 }
 
 :root {
-  --black: #0B0D0F;
-  --foreground: #F8F8F2;
+  --background: #22212C;
+  --comment: #7970A9;
+  --comment-secondary: #454158;
   --selection: #414D58;
   --selection-secondary: #8f9ba8;
-  --comment: #708CA9;
-  --comment-secondary: #454158;
+  --black: #0B0D0F;
+  --foreground: #F8F8F2;
   --cyan: #80FFEA;
   --green: #8AFF80;
   --orange: #FFCA80;
