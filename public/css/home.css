@@ -53,6 +53,9 @@ section .title {
     font-size: 2em;
   }
 
+}
+
+@media screen and (orientation: landscape)  {
   section {
     padding-top: 50vh;
   }
