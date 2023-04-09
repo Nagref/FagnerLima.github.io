@@ -55,7 +55,7 @@ section .title {
 
 }
 
-@media (max-height: 600px) and (orientation: landscape)  {
+@media (max-height: 600px) and (orientation: landscape) {
   section {
     padding-top: 50vh;
   }
