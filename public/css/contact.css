@@ -62,7 +62,6 @@ h2 {
 }
 
 span .label {
-  
   background: var(--black);
   color: var(--foreground);
   display: flex;
@@ -119,6 +118,7 @@ ul {
     justify-content: flex-end;
     margin-left: -20px;
   }
+
   ul {
     margin-left: -20px;
   }
