@@ -1,5 +1,7 @@
 * {
   font-family: "JetBrains Mono", "Lucida Console", "Courier New", monospace;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -17,6 +19,10 @@
   --red: #FF9580;
   --pink: #FF80BF;
   --purple: #9580FF;
+}
+
+html {
+  height: 100%;
 }
 
 /* Estilizando barras de rolagem no Chrome, Edge e Safari */
