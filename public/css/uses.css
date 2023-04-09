@@ -163,8 +163,14 @@ h3eng {
   background-color: var(--black);
   border-radius: 1em;
   border: 2px solid var(--comment-secondary);
+  padding-bottom: 16px;
 }
 
 peng {
   margin: 1em;
+}
+
+peng p {
+  display: flex;
+  justify-content: center;
 }
