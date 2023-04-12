@@ -133,7 +133,8 @@ li:hover {
   margin-right: 30em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px),
+(orientation: landscape) {
   .container {
     margin-left: 0;
     margin-right: 0;
