@@ -25,7 +25,7 @@ nav {
   padding: 5px;
   margin: auto;
   height: 100px;
-  opacity: 90%;
+  opacity: 0.9;
   position: sticky;
   top: 0;
   background-color: var(--black);

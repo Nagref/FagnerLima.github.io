@@ -115,8 +115,7 @@ h1 {
 
 @media screen and (max-width: 600px) {
   h3 {
-    font-size: 14px;
-    justify-content: flex-start;
+    letter-spacing: normal;
   }
 
   @media screen and (max-width: 600px) {
