@@ -44,10 +44,36 @@ body {
   padding-top: 80px;
 }
 
-@media screen and (max-width: 600px),
-(orientation:landscape) {
+@media screen and (max-width: 600px) {
   .body {
     flex-direction: column;
+  }
+}
+
+@media (max-height: 600px) and (orientation:landscape) {
+  .body {
+    flex-direction: column;
+  }
+
+  .avatar img {
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+
+  .avatar h3 {
+    display: flex;
+    padding: 0;
+    margin-left: 0.5em;
+    align-items: center;
+  }
+
+  .avatar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 
