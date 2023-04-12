@@ -48,7 +48,6 @@ h1 {
   font-weight: bold;
   max-width: 100%;
   padding: 10px;
-  margin-block-start: 100px;
 }
 
 h2 {
@@ -140,8 +139,8 @@ ul {
 }
 
 .items a:hover {
-  border-left: 5px solid var(--foreground);
-  border-bottom: 5px solid var(--foreground);
+  border-right: 6px solid var(--foreground);
+  border-top: 6px solid var(--foreground);
   background: var(--purple);
   color: var(--foreground);
 }
@@ -164,17 +163,6 @@ ul {
   border-radius: 30px;
 }
 
-.items::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  transform: rotate(45deg);
-  top: -7px;
-  left: 20px;
-  z-index: -1;
-}
-
 .dropdown {
   position: relative;
   font-size: 12px;
@@ -194,10 +182,10 @@ ul {
 }
 
 .dropdown:hover>.label {
-  background: var(--pink);
+  opacity: 0.1;
   color: var(--foreground);
-  border-left: 5px solid var(--foreground);
-  border-bottom: 5px solid var(--foreground);
+  border-right: 6px solid var(--foreground);
+  border-top: 6px solid var(--foreground);
 }
 
 /* Efeito de Glitch do avatar da página */

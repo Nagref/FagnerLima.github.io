@@ -36,7 +36,6 @@ h1 {
   font-weight: bold;
   max-width: 100%;
   padding: 10px;
-  margin-block-start: 100px;
 }
 
 /* Day & Night */
@@ -74,6 +73,10 @@ h1 {
   border-style: solid;
   padding: 0.5em;
   max-width: 93%;
+}
+
+.runner-canvas {
+  max-width: 100%;
 }
 
 /* Largura */

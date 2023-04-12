@@ -24,8 +24,8 @@ nav {
   font-family: sans-serif, monospace;
   padding: 5px;
   margin: auto;
-  height: 80px;
-  opacity: 80%;
+  height: 100px;
+  opacity: 90%;
   position: sticky;
   top: 0;
   background-color: var(--black);

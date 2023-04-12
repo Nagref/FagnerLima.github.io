@@ -48,7 +48,6 @@ body {
 @media screen and (max-width: 800px) {
   .list {
     flex-direction: column;
-    width: 100%;
     margin-left: 6px;
     margin-right: 0;
   }
@@ -68,7 +67,6 @@ h1 {
   font-weight: bold;
   max-width: 100%;
   padding: 10px;
-  margin-block-start: 100px;
 }
 
 @media screen and (max-width: 600px) {
@@ -122,23 +120,12 @@ li:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 0.8em;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
   overflow: hidden;
-  border-radius: 1em;
-  margin-left: 30em;
-  margin-right: 30em;
-}
-
-@media screen and (max-width: 800px),
-(orientation: landscape) {
-  .container {
-    margin-left: 0;
-    margin-right: 0;
-  }
+  height: auto;
 }
 
 .center {
@@ -158,9 +145,7 @@ li:hover {
 h3eng {
   color: var(--foreground);
   font-size: 14px;
-  max-width: 96%;
   padding: 0;
-  width: 500px;
   margin-left: 0.5em;
   margin-right: 0.5em;
   background-color: var(--black);
