@@ -3,3 +3,7 @@ package-lock.json
 .firebaserc
 database.rules.json
 firebase.json
+firestone_debug.log
+database-debug.log
+pubsub-debug.log
+ui_debug.log
