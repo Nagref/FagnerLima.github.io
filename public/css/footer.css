@@ -26,3 +26,13 @@ footer {
   font-size: 10px;
   height: 80px;
 }
+
+footer button {
+  width: 120px;
+}
+
+@media screen and (max-width: 600px) {
+  footer button {
+    width: auto;
+  }
+}
