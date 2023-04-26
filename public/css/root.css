@@ -29,7 +29,7 @@ body {
   background-color: var(--black);
 }
 
-/* Estilizando barras de rolagem no Chrome, Edge e Safari */
+/* Styling Scrollbar in Chrome, Edge, and Safari */
 body::-webkit-scrollbar {
   width: 8px;
   /* width of the entire scrollbar */

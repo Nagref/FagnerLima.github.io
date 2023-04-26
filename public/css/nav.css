@@ -1,5 +1,4 @@
-/* Estilo dos botões de toda página */
-
+/* All page buttons style */
 button {
   background-color: var(--black);
   color: var(--selection-secondary);
