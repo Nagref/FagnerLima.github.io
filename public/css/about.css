@@ -122,8 +122,6 @@ body {
 
 }
 
-
-
 h1 {
   background-image: linear-gradient(135deg, var(--pink) 0%, var(--orange) 100%);
   background-clip: text;
