@@ -43,9 +43,30 @@ body {
   padding-top: 80px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 970px) {
   .body {
     flex-direction: column;
+  }
+
+  .avatar img {
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+
+  .avatar h3 {
+    display: flex;
+    padding: 0;
+    margin-left: 0.5em;
+    align-items: center;
+  }
+
+  .avatar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -144,19 +165,14 @@ h1 {
     align-items: center;
     display: inline-block;
   }
-}
 
-@media screen and (max-width: 600px) {
   h3 {
     letter-spacing: normal;
   }
 
-  @media screen and (max-width: 600px) {
-    h4 {
-      flex-direction: column;
-    }
+  h4 {
+    flex-direction: column;
   }
-
 }
 
 h3 {
