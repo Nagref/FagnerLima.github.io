@@ -18,7 +18,7 @@ body {
   padding-bottom: 5px;
 }
 
-img {
+.expression img {
   max-width: 10%;
   justify-content: center;
   margin-top: 50px;
@@ -28,7 +28,7 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  img {
+  .expression img {
     max-width: 30%;
   }
 }
