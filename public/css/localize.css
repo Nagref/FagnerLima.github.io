@@ -3,6 +3,12 @@ body {
   border-radius: 10px;
 }
 
+::selection {
+  background: var(--green) !important;
+  color: var(--black) !important;
+  text-shadow: 0 0 0 var(--black);
+}
+
 h1 {
   color: var(--foreground);
   background-size: 100%;
