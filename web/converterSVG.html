@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/converterSVG.css">
+  <link rel="stylesheet" href="/public/css/root.css">
+  <link rel="stylesheet" href="/public/css/navButton.css">
+  <link rel="stylesheet" href="/public/css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="icon" href="/public/icons/android-chrome-512x512.png">
+  <meta name="theme-color" content="#454158">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <title>Conversor de JPG para SVG</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+</head>
+
+<nav><!-- Botões de navegação no topo da página -->
+  <div class="home">
+    <button><a href="/index.html">FL</a></button>
+    <button><a href="https://fronteditor.dev" target="_blank"><img src="/public/icons/brackets-curly.svg"></a></button>
+  </div>
+  <div class="nv">
+    <button><a href="/web/about.html">About</a></button>
+    <button><a href="/web/uses.html">Uses</a></button>
+    <button><a href="/web/game.html">Game</a></button>
+    <button><a href="/web/contact.html">Contact</a></button>
+  </div>
+</nav>
+
+<body>
+
+  <h1>Conversor de jpeg para svg</h1>
+  <br>
+  <br>
+  <div class="script">
+    <input type="file" id="imageInput" accept="image/jpeg" /><br>
+    <button onclick="convertToSVG()">Converter para SVG</button><br>
+    <textarea id="result" rows="10" cols="50"></textarea>
+  </div>
+
+  <script>
+    function convertToSVG() {
+      const fileInput = document.getElementById('imageInput');
+      const file = fileInput.files[0];
+
+      const reader = new FileReader();
+      reader.onload = function (event) {
+        const img = new Image();
+        img.onload = function () {
+          const canvas = new fabric.Canvas(null, { width: img.width, height: img.height });
+          const fabricImg = new fabric.Image(img);
+          canvas.add(fabricImg);
+          const svg = canvas.toSVG();
+          document.getElementById('result').value = svg;
+        };
+        img.src = event.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+  </script>
+</body>
+<footer>
+  <!-- Botões de links do fundo da página -->
+  <button><a href="https://instagram.com/nagref.jpeg" target="_blank"><i
+        class="fa-brands fa-instagram"></i>Instagram</a></button>
+  <button><a href="https://twitter.com/fagnerrlima" target="_blank"><i
+        class="fa-brands fa-twitter"></i>Twitter</a></button>
+  <button><a href="https://www.linkedin.com/in/fagnerrlima" target="_blank"><i
+        class="fa-brands fa-linkedin"></i>LinkedIn</a></button>
+  <button><a href="https://github.com/Nagref" target="_blank"><i class="fa-brands fa-github"></i>Github</a></button>
+</footer>
+
+</html>
