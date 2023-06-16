@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Profile Card//Fagner Lima</title>
+  <link rel="stylesheet" href="/public/css/profileCard.css">
+  <link rel="stylesheet" href="/public/css/root.css">
+  <link rel="stylesheet" href="/public/css/navButton.css">
+  <link rel="stylesheet" href="/public/css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="icon" href="/public/icons/android-chrome-512x512.png">
+  <meta name="theme-color" content="#454158">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="root">
+
+    <script>
+      // Data
+
+      const colors = [
+        "#fcb0f3",
+        "#dc94ef",
+        "#bc77ec",
+        "#9d5be8",
+        "#7d3ee4",
+        "#5d22e1",
+        "#3d05dd"
+      ];
+
+      const getRandomColor = (arr) => {
+        return arr[Math.floor(Math.random() * arr.length)];
+      };
+
+      const skillsData = [
+        {
+          name: "HTML & CSS",
+          emoji: "🎨",
+          bgColor: getRandomColor(colors)
+        },
+        {
+          name: "JavaScript",
+          emoji: "🧑‍💻",
+          bgColor: getRandomColor(colors)
+        },
+        {
+          name: "Git & Github",
+          emoji: "💿",
+          bgColor: getRandomColor(colors)
+        },
+        {
+          name: "React",
+          emoji: "⚛️",
+          bgColor: getRandomColor(colors)
+        },
+        {
+          name: "Tailwind CSS",
+          emoji: "💨",
+          bgColor: getRandomColor(colors)
+        },
+        {
+          name: "Backend Development",
+          emoji: "💻",
+          bgColor: getRandomColor(colors)
+        }
+      ];
+
+      // End of data
+
+      function Avatar() {
+        return (
+          <img
+            className="avatar"
+            src="https://avatars.githubusercontent.com/Nagref"
+            alt="Nagref"
+          />
+        );
+      }
+
+      function Intro() {
+        return (
+          <>
+            <h1>Fagner Lima</h1>
+            <p>
+              Hi, I'm Fagner Lima I'm a Software engineer, Postgraduate in
+              Business Cybersecurity Management, passionate about solving
+              problems using programming, i ended up seeing her an inspiration
+              for the profession. I consider myself an agile, responsible
+              person, hardworking, very positive and humorous. Always
+              learning, I like to be around within all technological
+              innovations, I aim to evolve more every day as a developer and
+              would like to help other people to become developer people.
+            </p>
+          </>
+        );
+      }
+
+      function Skill({ name, emoji, bgColor }) {
+        return (
+          <p className="skill" style={{ backgroundColor: bgColor }}>
+            {name} <span>{emoji}</span>
+          </p>
+        );
+      }
+
+      function SkillsList() {
+        return (
+          <>
+            <ul className="skill-list">
+              {skillsData.map((skill) => (
+                <Skill
+                  key={skill.name}
+                  name={skill.name}
+                  emoji={skill.emoji}
+                  bgColor={skill.bgColor}
+                />
+              ))}
+            </ul>
+          </>
+        );
+      }
+
+      function App() {
+        return (
+          <div className="card">
+            <Avatar />
+            <div className="data">
+              <Intro />
+              <SkillsList />
+            </div>
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(document.querySelector("#root"));
+
+      root.render(
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      );
+    </script>
+  </div>
+</body>
+
+</html>
