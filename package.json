@@ -1,0 +1,15 @@
+{
+  "name": "nagref.github.io",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "I'm a Full Stack Developer, <br/> passionate about solving problems using programming. <br/> Born in Rio de Janeiro, Brazil.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^20.2.0"
+  }
+}

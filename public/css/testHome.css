@@ -1,4 +1,5 @@
 body {
+  background-origin: border-box;
   border: 4px solid var(--comment-secondary);
   border-radius: 10px;
   text-align: center;
