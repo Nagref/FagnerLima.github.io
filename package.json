@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node --watch public/src/server.js"
   },
-  "author": "",
+  "author": "Fagner Lima",
   "license": "ISC",
   "dependencies": {
     "node": "^20.2.0"
