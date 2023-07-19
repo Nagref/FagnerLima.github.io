@@ -25,6 +25,11 @@ body {
   margin-left: 8%;
 }
 
+img {
+  max-width: 30%;
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 800px) {
   .about-container {
     flex-direction: column;
@@ -74,6 +79,9 @@ h1 {
     align-items: center;
     display: inline-block;
   }
+    img {
+      max-width: 90%;
+    }
 }
 
 h2 p {
@@ -139,7 +147,7 @@ li:hover {
 .engineer {
   display: flex;
   justify-content: center;
-  padding-bottom: 300px;
+  padding-bottom: 50px;
 }
 
 h3eng {
@@ -151,7 +159,7 @@ h3eng {
   background-color: var(--black);
   border-radius: 1em;
   border: 2px solid var(--comment-secondary);
-  padding-bottom: 16px;
+  /* padding-bottom: 16px; */
 }
 
 peng {
