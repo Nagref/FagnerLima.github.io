@@ -25,7 +25,7 @@ body {
   margin-left: 8%;
 }
 
-img {
+img#setupimg {
   max-width: 30%;
   border-radius: 20px;
 }
@@ -79,7 +79,7 @@ h1 {
     align-items: center;
     display: inline-block;
   }
-    img {
+    img#setupimg {
       max-width: 90%;
     }
 }
