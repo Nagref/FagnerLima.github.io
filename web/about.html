@@ -18,21 +18,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap"
     rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script>
+
+    $(function () {
+      $('#nav').load("/web/nav.html");
+      $('#footer').load("/web/footer.html");
+    });
+
+  </script>
 </head>
 
 <body>
-  <nav><!-- Botões de navegação no topo da página -->
-    <div class="home">
-      <button><a href="/index.html">FL</a></button>
-      <button><a href="https://fronteditor.dev" target="_blank"><img
-            src="/public/icons/brackets-curly.svg"></a></button>
-    </div>
-    <div class="nv">
-      <button><a href="/web/about.html" style="color: #F8F8F2;">About</a></button>
-      <button><a href="/web/uses.html">Uses</a></button>
-      <button><a href="/web/game.html">Game</a></button>
-      <button><a href="/web/contact.html">Contact</a></button>
-    </div>
+  <nav>
+    <!-- Botões de navegação no topo da página -->
+    <div id="nav"></div>
   </nav>
   <h1>Hello World.</h1>
 
@@ -90,7 +91,7 @@
         🏃 Beginner Runner
       </h3>
       <br>
-  </div>
+    </div>
   </div>
   <h4>
     <!-- <img loading="lazy"
@@ -99,13 +100,7 @@
   </h4>
   <footer>
     <!-- Botões de links do fundo da página -->
-    <button><a href="https://instagram.com/nagref.developer" target="_blank"><i
-          class="fa-brands fa-instagram"></i>Instagram</a></button>
-    <button><a href="https://twitter.com/fagnerrlima" target="_blank"><i
-          class="fa-brands fa-twitter"></i>Twitter</a></button>
-    <button><a href="https://www.linkedin.com/in/fagnerrlima" target="_blank"><i
-          class="fa-brands fa-linkedin"></i>LinkedIn</a></button>
-    <button><a href="https://github.com/Nagref" target="_blank"><i class="fa-brands fa-github"></i>Github</a></button>
+    <div id="footer"></div>
   </footer>
 </body>
 
