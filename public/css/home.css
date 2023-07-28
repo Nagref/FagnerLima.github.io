@@ -25,6 +25,7 @@ body {
 
 .title a {
   font-size: 3em;
+  line-height: 1em;
 }
 
 .title a:hover {
@@ -37,8 +38,6 @@ body {
 section {
   height: 80vh;
   display: flex;
-  /* padding-top: 20vh; */
-  /* padding-bottom: 24vh; */
 }
 
 section .title {
@@ -95,6 +94,10 @@ section .title span strong2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--foreground);
+}
+
+footer {
+  padding-top: 100px;
 }
 
 /* Animação da abertura da página */
@@ -217,8 +220,4 @@ section .title span strong2 {
   100% {
     width: 30px;
   }
-}
-
-footer {
-  padding-top: 100px;
 }
