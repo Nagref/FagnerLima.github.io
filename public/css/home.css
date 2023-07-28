@@ -86,6 +86,7 @@ section .title span strong {
   background-image: linear-gradient(135deg, var(--foreground) 0%, var(--comment-secondary) 100%);
   background-clip: text;
   font-size: 16px;
+  line-height: 32px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--foreground);
@@ -94,9 +95,10 @@ section .title span strong {
 section .title span strong2 {
   position: relative;
   display: inline-block;
-  background-image: linear-gradient(135deg, var(--selection-secondary) 0%, var(--comment-secondary) 100%);
+  background-image: linear-gradient(135deg, var(--foreground) 0%, var(--selection-secondary) 100%);
   background-clip: text;
   font-size: 16px;
+  line-height: 32px;
   font-weight: lighter;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -87,7 +87,8 @@ h1 {
 h2 p {
   color: var(--foreground);
   font-family: JetBrains mono, sans-serif, monospace;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 32px;
   display: flex;
   justify-content: center;
   max-width: 100%;
@@ -114,7 +115,8 @@ li {
 
   text-decoration: underline;
   margin: 4px;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 li:hover {
@@ -152,7 +154,8 @@ li:hover {
 
 h3eng {
   color: var(--foreground);
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 32px;
   padding: 0;
   margin-left: 0.5em;
   margin-right: 0.5em;

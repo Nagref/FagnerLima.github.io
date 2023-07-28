@@ -116,7 +116,8 @@ h1 {
 h2 {
   color: var(--foreground);
   font-family: JetBrains mono, sans-serif, monospace;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 32px;
   display: flex;
   justify-content: center;
   max-width: 100%;
