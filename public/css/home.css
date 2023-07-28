@@ -18,7 +18,13 @@ body {
 .title {
   font-family: JetBrains mono, sans-serif, monospace;
   font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
   font-size: larger;
+}
+
+.title a {
+  font-size: 3em;
 }
 
 .title a:hover {
@@ -29,10 +35,10 @@ body {
 }
 
 section {
-  height: 50vh;
+  height: 80vh;
   display: flex;
-  padding-top: 20vh;
-  padding-bottom: 24vh;
+  /* padding-top: 20vh; */
+  /* padding-bottom: 24vh; */
 }
 
 section .title {
@@ -49,7 +55,7 @@ section .title {
   }
 
   section .title span {
-    font-size: 2em;
+    /* font-size: 2em; */
   }
 
 }
@@ -62,18 +68,18 @@ section .title {
 
 section .title span {
   display: inline-block;
-  font-size: 2.5em;
+  margin-top: 1em;
   color: var(--foreground);
   width: 100%;
   transform: translateX(-100%);
   animation: byBottom 1s ease both;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   section .title span {
     font-size: 2.5em;
   }
-}
+} */
 
 section .title span:last-child {
   animation: byBottom 1s 0.25s ease both;
@@ -85,8 +91,6 @@ section .title span strong {
   display: inline-block;
   background-image: linear-gradient(135deg, var(--foreground) 0%, var(--comment-secondary) 100%);
   background-clip: text;
-  font-size: 16px;
-  line-height: 32px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--foreground);
@@ -97,8 +101,6 @@ section .title span strong2 {
   display: inline-block;
   background-image: linear-gradient(135deg, var(--foreground) 0%, var(--selection-secondary) 100%);
   background-clip: text;
-  font-size: 16px;
-  line-height: 32px;
   font-weight: lighter;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
