@@ -18,8 +18,8 @@ body {
 .about {
   display: flex;
   flex-direction: column;
-  line-height: 1.5;
-  max-width: 20%;
+  line-height: 32px;
+  max-width: 25%;
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
@@ -176,12 +176,12 @@ h1 {
 h3 {
   font-weight: normal;
   color: var(--selection-secondary);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h3 strong {
   color: var(--foreground);
-  font-size: 14px;
+  font-size: 16px;
   font-family: JetBrains mono, sans-serif, monospace;
 }
 
@@ -191,4 +191,9 @@ h4 {
   margin: 10px;
   justify-content: space-around;
   height: 120px;
+}
+
+p { 
+  margin: auto;
+  padding-bottom: 10px;
 }
