@@ -75,11 +75,6 @@ section .title span {
   animation: byBottom 1s ease both;
 }
 
-/* @media screen and (max-width: 600px) {
-  section .title span {
-    font-size: 2.5em;
-  }
-} */
 
 section .title span:last-child {
   animation: byBottom 1s 0.25s ease both;
