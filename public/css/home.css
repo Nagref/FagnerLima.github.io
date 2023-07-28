@@ -53,11 +53,6 @@ section .title {
     max-width: 100%;
     width: 100%;
   }
-
-  section .title span {
-    /* font-size: 2em; */
-  }
-
 }
 
 @media (max-height: 600px) and (orientation: landscape) {
