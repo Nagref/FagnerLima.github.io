@@ -45,6 +45,9 @@ nav button {
   font-size: 15px;
   font-weight: bolder;
 }
+.active {
+  color: var(--foreground);
+}
 
 @media screen and (max-width: 600px) {
   nav button {
