@@ -44,8 +44,7 @@ body {
 
   .avatar img {
     margin: 0 auto;
-    width: 18rem;
-    height: 18rem;
+    margin-left: 0.5em;
     display: flex;
     padding-bottom: 10px;
     justify-content: center;
@@ -63,6 +62,9 @@ body {
     flex-direction: column;
     width: 100%;
   }
+  .about {
+    max-width: 100%;
+}
 }
 
 @media (max-height: 600px) and (orientation:landscape) {

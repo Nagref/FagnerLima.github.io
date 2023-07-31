@@ -1,6 +1,6 @@
 /* All page buttons style */
 button {
-  background-color: var(--black);
+  background-color: transparent;
   color: var(--selection-secondary);
   font-family: sans-serif, monospace;
   border: none;
@@ -18,7 +18,7 @@ button {
 
 button:hover {
   color: var(--foreground);
-  background-color: var(--comment-secondary);
+  /* background-color: var(--comment-secondary); */
   opacity: 0.9;
   transition: opacity 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
@@ -29,16 +29,17 @@ nav {
   padding: 5px;
   margin: auto;
   height: 100px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   position: sticky;
   top: 0;
-  background-color: var(--black);
+  background-color: transparent;
+  backdrop-filter: blur(6px);
 }
 
 nav button {
   display: flex;
   flex-direction: row;
-  background-color: var(--black);
+  /* background-color: var(--black); */
   border-radius: 0.5em;
   text-transform: uppercase;
   font-size: 15px;
