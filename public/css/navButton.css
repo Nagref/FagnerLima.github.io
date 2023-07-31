@@ -45,7 +45,7 @@ nav button {
   font-size: 15px;
   font-weight: bolder;
 }
-.active {
+nav .active {
   color: var(--foreground);
 }
 

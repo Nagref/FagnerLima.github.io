@@ -1,3 +1,5 @@
+<script src="nav.js"></script>
+
 <!-- Botões de navegação no topo da página -->
 <div class="home">
   <button><a href="/">FL</a></button>
@@ -9,26 +11,3 @@
   <button><a href="/web/game.html" id="game">Game</a></button>
   <button><a href="/web/contact.html" id="contact">Contact</a></button>
 </div>
-
-<script>
-function highlightCurrentPage() {
-    // Get the current URL.
-    const currentUrl = window.location.href;
-
-    // Loop through all of the menu items.
-    const menuItems = document.querySelectorAll('.nv');
-    for (const menuItem of menuItems) {
-      // Check if the menu item's href matches the current URL.
-      if (menuItem.href === currentUrl) {
-        // Set the menu item's active class.
-        menuItem.classList.add('active');
-      } else {
-        // Remove the menu item's active class.
-        menuItem.classList.remove('active');
-      }
-    }
-  }
-
-  // Run the highlightCurrentPage function when the page loads.
-  document.addEventListener('DOMContentLoaded', highlightCurrentPage);
-</script>
