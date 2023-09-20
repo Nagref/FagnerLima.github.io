@@ -35,15 +35,23 @@ section {
   margin-right: 0.5em;
 }
 
-.bottom p{
+.bottom-right p {
   margin-right: 2em;
 }
 
-.bottom {
+.bottom-right {
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  padding-right: 5em;
+}
+
+.bottom-left p {
+  margin-right: 2em;
+}
+
+.bottom-left {
+  margin: 0 auto;
+  display: flex;
+  padding-right: 9.7em;
 }
 
 .body {
@@ -66,18 +74,28 @@ section {
     width: 100%;
   }
 
-.bottom {
-  flex-direction: column;
-}
+  .bottom-left {
+    flex-direction: column;
+    padding-right: 0;
+  }
 
-section {
-  flex-direction: column;
-}
+  .bottom-right {
+    flex-direction: column;
+  }
 
-.bottom p {
-  margin-right: 0;
-  margin-left: 0.5em;
-}
+  section {
+    flex-direction: column;
+  }
+
+  .bottom-right p {
+    margin-right: 0;
+    margin-left: 0.5em;
+  }
+
+  .bottom-left p {
+    margin-right: 0;
+    margin-left: 0.5em;
+  }
 
   .avatar img {
     margin: 0 auto;
