@@ -12,7 +12,11 @@ body {
 
 
 .about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
+  margin: auto;
 }
 
 .avt img {
@@ -23,7 +27,7 @@ body {
 
 .avt {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 

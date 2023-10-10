@@ -26,9 +26,10 @@ body {
 
 .avt {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
+
 .expression img {
   max-width: 10%;
   justify-content: center;
