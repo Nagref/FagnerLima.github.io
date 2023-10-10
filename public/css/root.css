@@ -5,7 +5,7 @@
 }
 
 :root {
-  --background: #22212C;
+  --background: #151320;
   --comment: #7970A9;
   --comment-secondary: #454158;
   --selection: #414D58;
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  background-color: var(--black);
+  background-color: var(--background);
 }
 
 /* Styling Scrollbar in Chrome, Edge, and Safari */

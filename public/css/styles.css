@@ -1,0 +1,245 @@
+/* ROOT-------- */
+* {
+  font-family: "JetBrains Mono", "Lucida Console", "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: #151320;
+  --comment: #7970A9;
+  --comment-secondary: #454158;
+  --selection: #414D58;
+  --selection-secondary: #8f9ba8;
+  --black: #0B0D0F;
+  --foreground: #F8F8F2;
+  --cyan: #80FFEA;
+  --green: #8AFF80;
+  --orange: #FFCA80;
+  --yellow: #FFFF80;
+  --red: #FF9580;
+  --pink: #FF80BF;
+  --purple: #9580FF;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* Styling Scrollbar in Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+  width: 8px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--back);
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--comment-secondary);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 2px solid var(--comment-secondary);
+  /* creates padding around scroll thumb */
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+::selection {
+  background: var(--cyan) !important;
+  color: var(--black) !important;
+  text-shadow: 0 0 0 var(--black);
+}
+
+/* NAV---------- */
+/* All page buttons style */
+button {
+  background-color: transparent;
+  color: var(--selection-secondary);
+  font-family: sans-serif, monospace;
+  border: none;
+  justify-content: center;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+button:hover {
+  color: var(--foreground);
+  /* background-color: var(--comment-secondary); */
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+}
+
+nav {
+  padding: 5px;
+  margin: auto;
+  height: 90px;
+  /* opacity: 0.9; */
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  backdrop-filter: blur(6px);
+  border-bottom: solid 1px var(--black);
+  margin: auto;
+  width: 96%;
+}
+
+nav button {
+  display: flex;
+  flex-direction: row;
+  /* background-color: var(--black); */
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+nav .active {
+  color: var(--foreground);
+}
+
+@media screen and (max-width: 600px) {
+  nav button {
+    font-size: 16px;
+  }
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.home button {
+  padding: 1px;
+  width: 30px;
+  font-size: 18px;
+}
+
+.nv {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: -10px 50px 20px;
+}
+
+.nv button {
+  width: 80px;
+}
+
+
+/* Index------ */
+
+section {
+  padding: 50px;
+}
+
+.int {
+  display: flex;
+  flex-direction: column;
+}
+
+.avt img {
+  width: 80px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.avt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--foreground);
+  padding: 20px;
+}
+
+.title strong {
+  background-image: linear-gradient(135deg, var(--purple) 0%, var(--cyan) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Donut javascript configurations */
+
+.container {
+  background-image: linear-gradient(135deg, var(--purple) 15%, var(--cyan) 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  overflow: hidden;
+  height: auto;
+}
+
+.center {
+  background-image: linear-gradient(135deg, var(--purple) 15%, var(--cyan) 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Footer------ */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 80%;
+  padding: 20px;
+  border-top: solid 1px var(--comment-secondary);
+}
+
+
+footer .btstart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--foreground);
+}
+
+footer button {
+  width: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  footer button {
+    width: auto;
+  }
+}

@@ -1,16 +1,25 @@
-footer {
+#footer {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  margin: auto;
+  max-width: 80%;
+  padding: 20px;
+  border-top: solid 1px var(--comment-secondary);
+}
+
+footer .btstart {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  max-width: 100%;
-  background-color: var(--black);
-  font-size: 10px;
-  height: 80px;
+  font-size: 12px;
+  color: var(--foreground);
 }
 
 footer button {
-  width: 120px;
+  width: 20px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 600px) {

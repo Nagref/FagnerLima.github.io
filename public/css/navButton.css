@@ -28,12 +28,15 @@ button:hover {
 nav {
   padding: 5px;
   margin: auto;
-  height: 100px;
+  height: 90px;
   /* opacity: 0.9; */
   position: sticky;
   top: 0;
   background-color: transparent;
   backdrop-filter: blur(6px);
+  border-bottom: solid 1px var(--black);
+  margin: auto;
+  width: 96%;
 }
 
 nav button {
