@@ -9,6 +9,9 @@
   <meta name="description" content="Fagner Lima - Software Engineer Full Stack">
   <title>Fagner Lima</title>
   <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/css/root.css">
+    <link rel="stylesheet" href="public/css/navButton.css">
+    <link rel="stylesheet" href="public/css/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <link rel="icon" href="public/icons/android-chrome-512x512.png">
   <meta name="theme-color" content="#131520">
@@ -17,35 +20,21 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+  <script>
+
+    $(function () {
+      $('#nav').load("/web/nav.html");
+      $('#footer').load("/web/footer.html");
+    });
+
+  </script>
 </head>
 
 <body>
+
   <!-- Botões de navegação no topo da página -->
   <nav>
-    <script>
-      const currentPageUrl = window.location.href;
-      const menuItems = document.querySelectorAll("nav a")
-      menuItems.forEach(item => {
-        const itemUrl = item.href;
-
-        if (currentPageUrl === itemUrl) {
-          item.classList.add("active");
-        }
-      })
-    </script>
-
-    <div class="home">
-      <button><a href="/">FL</a></button>
-      <button><a href="https://fronteditor.dev" target="_blank"><img
-            src="/public/icons/brackets-curly.svg"></a></button>
-    </div>
-    <div class="nv">
-      <button><a href="/web/about.html" id="about"><i class="fa-regular fa-user"></i></a></button>
-      <button><a href="/web/uses.html" id="uses"><i class="fa-solid fa-desktop"></i></a></button>
-      <!-- <button><a href="/web/game.html" id="game">Game</a></button> -->
-      <button><a href="/web/contact.html" id="contact"><i class="fa-regular fa-envelope"></i></a></button>
-    </div>
-
+    <div id="nav"></div>
   </nav>
 
 
@@ -124,17 +113,8 @@
     setInterval(asciiframe, 50)</script><br><br><br><br><br>
 
   <footer>
-    <div class="btstart"> Copyright © Fagner Lima.</div>
     <!-- Botões de links do fundo da página -->
-    <div class="btend">
-      <button><a href="https://instagram.com/nagref.developer" target="_blank"><i
-            class="fa-brands fa-instagram"></i></a></button>
-      <button><a href="https://twitter.com/fagnerrlima" target="_blank"><i
-            class="fa-brands fa-twitter"></i></a></button>
-      <button><a href="https://www.linkedin.com/in/fagnerrlima" target="_blank"><i
-            class="fa-brands fa-linkedin"></i></a></button>
-      <button><a href="https://github.com/Nagref" target="_blank"><i class="fa-brands fa-github"></i></a></button>
-    </div>
+    <div id="footer"></div>
   </footer>
 </body>
 
