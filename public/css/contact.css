@@ -39,11 +39,6 @@ body {
   border: 4px solid var(--pink);
 }
 
-@media screen and (max-width: 600px) {
-  .expression img {
-    max-width: 30%;
-  }
-}
 
 h1 {
   background-image: linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%);
@@ -91,31 +86,12 @@ ul {
   padding-inline-start: 0;
 }
 
-.dropdown {
-  position: relative;
-  font-size: 16px;
-  line-height: 32px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 40%;
-  margin-right: 40%;
-}
-
-@media screen and (max-width: 600px) {
-  .dropdown {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-}
-
 .label {
   cursor: pointer;
   background: var(--background);
   padding: 1rem;
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-self: center;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box;
   margin-top: 10px;
@@ -124,19 +100,6 @@ ul {
   color: var(--foreground);
   border: 2px solid var(--foreground);
   font-weight: bold;
-}
-
-@media screen and (max-width: 600px) {
-  .label {
-    padding-right: 2rem;
-    padding-left: 6rem;
-    justify-content: flex-end;
-    margin-left: -20px;
-  }
-
-  ul {
-    margin-left: -20px;
-  }
 }
 
 .items a {
@@ -168,7 +131,8 @@ ul {
   background: var(--background);
   opacity: 0;
   visibility: hidden;
-  min-width: 100%;
+  width: 20%;
+  margin-top: 6rem;
   height: 0;
   position: absolute;
   transform-origin: top;
@@ -178,14 +142,13 @@ ul {
 }
 
 .dropdown {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 20%;
   font-size: 16px;
   line-height: 32px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 40%;
-  margin-right: 40%;
-  padding-bottom: 50em;
+  margin: auto;
 }
 
 
@@ -203,6 +166,19 @@ ul {
   border-top: 6px solid var(--foreground);
 }
 
+@media screen and (max-width: 600px) {
+  .expression img {
+    max-width: 30%;
+  }
+
+  .items {
+    width: 50%;
+  }
+
+  .dropdown{
+    width: 50%;
+  }
+}
 /* Efeito de Glitch do avatar da página */
 
 @keyframes glitch {
