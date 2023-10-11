@@ -36,14 +36,12 @@ body {
   align-items: center;
 }
 section {
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   line-height: 32px;
-  padding-bottom: 2em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  padding: 20px;
 }
 
 .bottom-right p {
