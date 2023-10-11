@@ -26,6 +26,9 @@ button:hover {
 }
 
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5px;
   margin: auto;
   height: 90px;
@@ -36,7 +39,7 @@ nav {
   backdrop-filter: blur(6px);
   border-bottom: solid 1px var(--black);
   margin: auto;
-  width: 96%;
+  /* width: 96%; */
 }
 
 nav button {
@@ -58,7 +61,7 @@ nav .active {
     font-size: 16px;
   }
 }
-
+/* 
 .home {
   display: flex;
   justify-content: space-between;
@@ -70,13 +73,13 @@ nav .active {
   padding: 1px;
   width: 30px;
   font-size: 18px;
-}
+} */
 
 .nv {
   display: flex;
   justify-content: center;
   justify-items: center;
-  margin: -10px 50px 20px;
+  /* margin: -10px 50px 20px; */
 }
 
 .nv button {

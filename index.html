@@ -38,81 +38,81 @@
   </nav>
 
 
-  <section>
-    <div class="int">
-      <div class="avt">
-        <img alt="fagnerLima" src="/public/img/Nagref2.0.png">
-        <div class="title">
-        <!-- <span><a>Fagner Lima</a></span> -->
-        <span>
-          <p>Fagner Lima</br>
-            <strong>Apaixonado por resolver problemas
-              usando programação</strong>
-            </strong>
-          </p>
-        </span>
+  <div class="body">
+    <section>
+      <div class="int">
+        <div class="avt">
+          <img alt="fagnerLima" src="/public/img/Nagref2.0.png">
+        </div>
+        <h1>Engenheiro de Software FreeLancer Full-Stack.</h1>
+        <h3>
+          <strong>Minhas Stacks:</strong><br><br>
+          <div class="stack">
+            <img align="center" alt="Nagref-HTML"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+            <img align="center" alt="Nagref-CSS"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+            <img align="center" alt="Nagref-Js"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+            <img align="center" alt="Nagref-React"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+            <img align="center" alt="Nagref-NodeJS"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+            <img align="center" alt="Nagref-Go"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg">
+          </div>
+        </h3><br>
+  
+        <div class="about">
+          <h3>
+            <p><strong>Olá, eu me chamo Fagner Lima.</strong></p>
+            <p>
+              Sou Engenheiro de Software,
+              Pós-Graduado em
+              Gestão da Cybersegurança Empresarial,
+              voluntariado na comunidade NodeBR e FreeLancer Full-Stack
+              apaixonado por resolver problemas
+              usando programação,
+              acabei vendo nela
+              uma inspiração para a profissão.</p>
+            <p>
+              Eu me considero ágil,
+              responsável, trabalhador,
+              muito positivo e bem humorado.
+              Sempre aprendendo, gosto de estar sempre por
+              dentro de todas as inovações tecnológicas,
+              gosto de trabalho em equipe e desafios.</p>
+            <p>
+              Pretendo evoluir mais a cada dia
+              como desenvolvedor e gostaria
+              de ajudar outras pessoas a se tornarem desenvolvedores.
+              Nasceu no Rio de Janeiro, Brasil.</p>
+          </h3>
+          <h3>
+            <p>
+              <strong>Meus Valores:</strong><br><br>
+              🧠 Desenvolvimento cuidadoso<br>
+              😇 Leal e Responsável<br>
+              💬 Trabalho em equipe e comunicação<br>
+              🔮 Mentalidade de Aprendizagem<br>
+            </p>
+          </h3><br>
+  
+  
+          <h3>
+            <p>
+              <strong>Hobbies:</strong><br><br>
+              🎸 Guitarrista<br>
+              ☕ Barista - Coffee<br>
+              🏃 Maratonista Iniciante
+            </p>
+          </h3>
+  
+          </section>
+          <br>
+        </div>
       </div>
-      </div>
-      
-    </div>
-  </section>
-  <div class="container">
-    <pre class="center" id="d"></pre>
-  </div>
-  <script>
-    var pretag = document.getElementById("d");
-
-    var tmr1 = undefined,
-      tmr2 = undefined;
-    var A = 1,
-      B = 1;
-
-    var asciiframe = () => {
-      var b = [];
-      var z = [];
-      A += 0.07;
-      B += 0.03;
-      var cA = Math.cos(A),
-        sA = Math.sin(A),
-        cB = Math.cos(B),
-        sB = Math.sin(B);
-      for (var k = 0; k < 1760; k++) {
-        b[k] = k % 80 == 79 ? "\n" : " ";
-        z[k] = 0;
-      }
-      for (var j = 0; j < 6.28; j += 0.07) {
-        // j <=> theta
-        var ct = Math.cos(j),
-          st = Math.sin(j);
-        for (i = 0; i < 6.28; i += 0.02) {
-          // i <=> phi
-          var sp = Math.sin(i),
-            cp = Math.cos(i),
-            h = ct + 2, // R1 + R2*cos(theta)
-            D = 1 / (sp * h * sA + st * cA + 5), // this is 1/z
-            t = sp * h * cA - st * sA; // this is a clever factoring of some of the terms in x' and y'
-
-          var x = 0 | (40 + 30 * D * (cp * h * cB - t * sB)),
-            y = 0 | (12 + 15 * D * (cp * h * sB + t * cB)),
-            o = x + 80 * y,
-            N =
-              0 |
-              (8 *
-                ((st * sA - sp * ct * cA) * cB -
-                  sp * ct * sA -
-                  st * cA -
-                  cp * ct * sB));
-          if (y < 22 && y >= 0 && x >= 0 && x < 79 && D > z[o]) {
-            z[o] = D;
-            b[o] = ".,-~:;=!*#$@"[N > 0 ? N : 0];
-          }
-        }
-      }
-      pretag.innerHTML = b.join("");
-    };
-
-    setInterval(asciiframe, 50)</script><br><br><br><br><br>
-
+  
   <footer>
     <!-- Botões de links do fundo da página -->
     <div id="footer"></div>

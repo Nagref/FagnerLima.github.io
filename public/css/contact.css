@@ -248,3 +248,26 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Donut javascript configurations */
+
+.container {
+  background-image: linear-gradient(135deg, var(--purple) 15%, var(--cyan) 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  overflow: hidden;
+  height: auto;
+}
+
+.center {
+  background-image: linear-gradient(135deg, var(--purple) 15%, var(--cyan) 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
