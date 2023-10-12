@@ -1,6 +1,4 @@
 body {
-  /* border: 4px solid var(--purple);
-  border-radius: 10px; */
   text-align: center;
 }
 
@@ -8,14 +6,6 @@ body {
   background: var(--purple) !important;
   color: var(--black) !important;
   text-shadow: 0 0 0 var(--black);
-}
-
-.expression {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  padding-bottom: 5px;
 }
 
 .avt img {
@@ -29,16 +19,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.expression img {
-  max-width: 10%;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  border: 4px solid var(--pink);
-}
-
 
 h1 {
   background-image: linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%);
@@ -57,28 +37,6 @@ h1 {
   word-spacing: -16px;
 }
 
-h2 {
-  color: var(--foreground);
-  font-family: JetBrains mono, sans-serif, monospace;
-  font-size: 16px;
-  line-height: 32px;
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  padding: 10px;
-}
-
-span .label {
-  background: var(--background);
-  color: var(--foreground);
-  display: flex;
-  align-items: center;
-  place-items: center;
-  line-height: 0;
-}
-
 ul {
   list-style: none;
   margin-block-start: 0;
@@ -86,24 +44,23 @@ ul {
   padding-inline-start: 0;
 }
 
-.label {
-  cursor: pointer;
-  background: var(--background);
-  padding: 1rem;
+.items {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  margin-top: 10px;
-  transition: all 0.3s;
-  border-radius: 1em;
-  color: var(--foreground);
-  border: 2px solid var(--foreground);
-  font-weight: bold;
+  margin: auto;
+  flex-direction: column;
+  background: var(--background);
+  width: 20%;
+  margin-top: 2rem;
+  border-radius: 30px;
 }
 
 .items a {
-  color: var(--selection-secondary);
+  border-bottom: 6px solid var(--foreground);
+  border-top: 2px solid var(--foreground);
+  border-right: 2px solid var(--foreground);
+  border-left: 2px solid var(--foreground);
+  background: var(--background);
+  color: var(--foreground);
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -111,118 +68,28 @@ ul {
   text-decoration: none;
   transition: all 0.2s;
   border-radius: 1em;
-  border: 2px solid var(--foreground);
   font-weight: bold;
 }
 
 .items a:hover {
-  border-right: 6px solid var(--foreground);
-  border-top: 6px solid var(--foreground);
-  background: var(--purple);
+  border-bottom: 6px solid var(--foreground);
+  border-top: 2px solid var(--foreground);
+  border-right: 2px solid var(--foreground);
+  border-left: 2px solid var(--foreground);
   color: var(--foreground);
+  background-color: var(--purple);
 }
 
-.fa-brands,
-.fa-solid {
-  margin-right: 5px;
+.items a:active {
+  border: 2px solid var(--foreground);
+  background-color: var(--pink);
 }
 
-.items {
-  background: var(--background);
-  opacity: 0;
-  visibility: hidden;
-  width: 20%;
-  margin-top: 6rem;
-  height: 0;
-  position: absolute;
-  transform-origin: top;
-  transform: scaleY(0);
-  transition: transform 0.3s;
-  border-radius: 30px;
-}
-
-.dropdown {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 20%;
-  font-size: 16px;
-  line-height: 32px;
-  margin: auto;
-}
-
-
-.dropdown:hover>.items {
-  opacity: 1;
-  visibility: visible;
-  height: unset;
-  transform: scaleY(1);
-}
-
-.dropdown:hover>.label {
-  opacity: 0.1;
-  color: var(--foreground);
-  border-right: 6px solid var(--foreground);
-  border-top: 6px solid var(--foreground);
-}
 
 @media screen and (max-width: 600px) {
-  .expression img {
-    max-width: 30%;
-  }
-
   .items {
     width: 50%;
   }
-
-  .dropdown{
-    width: 50%;
-  }
-}
-/* Efeito de Glitch do avatar da página */
-
-@keyframes glitch {
-
-  0%,
-  55.1%,
-  100% {
-    background: url("/img/nagref.png");
-    background-size: cover;
-  }
-
-  50% {
-    background: url("/img/nagref-glich-1.png");
-    background-size: cover;
-  }
-
-  52.5% {
-    background: url("/img/nagref-glich-2.png");
-    background-size: cover;
-  }
-
-  55% {
-    background: url("/img/nagref-glich-3.png");
-    background-size: cover;
-  }
-}
-
-.avatar {
-  width: 14rem;
-  height: 14rem;
-
-  border-radius:
-    50% 50% 46% 54% / 51% 47% 53% 49%;
-
-  background-image: url("/img/nagref.png");
-  background-size: cover;
-
-  animation:
-    glitch 3.75s infinite steps(1);
-
-  margin-top: 60px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Donut javascript configurations */
