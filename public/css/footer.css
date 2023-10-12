@@ -26,4 +26,9 @@ footer button {
   footer button {
     width: auto;
   }
+
+  #footer {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
 }
