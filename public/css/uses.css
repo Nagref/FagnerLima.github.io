@@ -39,6 +39,7 @@ img#setupimg {
   border: solid 2px var(--purple);
   border-radius: 20px;
   margin-bottom: 2em;
+  cursor: pointer;
 }
 
 .list {
