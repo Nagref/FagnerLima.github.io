@@ -10,6 +10,10 @@ body {
   text-shadow: 0 0 0 var(--black);
 }
 
+.nv #uses {
+  color: var(--foreground);
+}
+
 .about-container {
   display: flex;
   justify-content: center;
