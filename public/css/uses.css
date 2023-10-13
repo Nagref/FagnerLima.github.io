@@ -16,10 +16,11 @@ body {
 
 .about-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
   padding: 10px;
+  max-width: 760px;
 }
 
 .avt img {
@@ -47,7 +48,7 @@ img#setupimg {
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  margin: auto;
+  margin: 10px;
 }
 
 h1 {
