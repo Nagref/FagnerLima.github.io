@@ -10,12 +10,10 @@ body {
   text-shadow: 0 0 0 var(--black);
 }
 
-
 .about-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   margin: auto;
 }
 
@@ -33,34 +31,17 @@ body {
 
 img#setupimg {
   max-width: 30%;
+  border: solid 2px var(--purple);
   border-radius: 20px;
-}
-
-@media screen and (max-width: 800px) {
-  .about-container {
-    flex-direction: column;
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
+  margin-bottom: 2em;
 }
 
 .list {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  align-items: baseline;
+  align-items: stretch;
   justify-content: center;
-  padding: 20px;
   margin: auto;
-}
-
-@media screen and (max-width: 800px) {
-  .list {
-    flex-direction: column;
-    margin: 0;
-
-  }
 }
 
 h1 {
@@ -75,9 +56,7 @@ h1 {
   line-height: 50px;
   font-weight: bold;
   max-width: 100%;
-  padding: 10px;
-  letter-spacing: -4px;
-  word-spacing: -16px;
+  letter-spacing: -2px;
 }
 
 @media screen and (max-width: 600px) {
@@ -111,7 +90,7 @@ p {
   font-weight: bolder;
   display: flex;
   text-align: justify;
-  margin: 20px;
+  margin: 20px 20px 20px 0;
   max-width: 100%;
 }
 
@@ -124,4 +103,8 @@ li {
 
 li:hover {
   color: var(--purple);
+}
+
+li:active {
+  color: var(--cyan);
 }
