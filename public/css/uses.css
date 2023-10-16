@@ -34,7 +34,8 @@ body {
 }
 
 img#setupimg {
-  max-width: 30%;
+  width: 30%;
+  height: 30%;
   border: solid 2px var(--purple);
   border-radius: 20px;
   margin-bottom: 2em;
@@ -111,7 +112,8 @@ li:active {
   }
 
   img#setupimg {
-    max-width: 90%;
+    width: 90%;
+    height: 90%;
   }
 
   .list {
