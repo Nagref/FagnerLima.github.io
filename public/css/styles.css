@@ -21,6 +21,7 @@ body {
 
 .avt img {
   width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin: 20px 20px 20px 0;
 }
@@ -51,14 +52,14 @@ section {
   align-items: flex-start;
 }
 
-.stack h3 {
+.stack h2 {
   margin-top: 5px;
-  height: 30px;
 }
 
 .stack img {
   border-radius: 0;
   width: 4%;
+  height: 4%;
   margin: 0;
 }
 
@@ -77,13 +78,13 @@ h1 {
   letter-spacing: -2px;
 }
 
-h3 {
+h2 {
   font-weight: normal;
   color: var(--selection-secondary);
   font-size: 16px;
 }
 
-h3 strong {
+h2 strong {
   color: var(--foreground);
   font-size: 16px;
   font-family: JetBrains mono, sans-serif, monospace;
@@ -102,15 +103,9 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  .stack h3 {
-    display: flex;
-    padding: 0;
-    margin-left: 0.5em;
-    align-items: center;
-  }
-
   .stack img {
     width: 10%;
+    height: 10%;
   }
 
   h1 {
@@ -118,11 +113,7 @@ p {
     display: inline-block;
   }
 
-  h3 {
+  h2 {
     letter-spacing: normal;
-  }
-
-  h4 {
-    flex-direction: column;
   }
 }

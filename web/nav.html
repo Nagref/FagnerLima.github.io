@@ -1,13 +1,17 @@
-<script src="nav.js"></script>
+<script>
+  const currentPageUrl = window.location.href;
+  const menuItems = document.querySelectorAll("nav a")
+  menuItems.forEach(item => {
+    const itemUrl = item.href;
 
-<!-- Botões de navegação no topo da página -->
-<!-- <div class="home">
-  <button><a href="/">FL</a></button>
-  <button><a href="https://fronteditor.dev" target="_blank"><img src="/public/icons/brackets-curly.svg"></a></button>
-</div> -->
+    if (currentPageUrl === itemUrl) {
+      item.classList.add("active");
+    }
+  })
+</script>
+
 <div class="nv">
   <button><a href="/" id="about"><i class="fa-solid fa-house"></i></a></button>
   <button><a href="/web/uses.html" id="uses"><i class="fa-solid fa-laptop-code"></i></a></button>
-  <!-- <button><a href="/web/game.html" id="game">Game</a></button> -->
   <button><a href="/web/contact.html" id="contact"><i class="fa-solid fa-envelope"></i></a></button>
 </div>
