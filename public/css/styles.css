@@ -12,6 +12,21 @@ body {
   color: var(--foreground);
 }
 
+#btnTop {
+  display: none;
+  position: fixed;
+  bottom: 20%;
+  z-index: 99;
+  right: 50%;
+  background-color: transparent;
+  backdrop-filter: blur(3px);
+  color: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
 .about {
   display: flex;
   flex-direction: column;

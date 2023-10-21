@@ -1,120 +1,153 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Fagner Lima">
-  <meta name="description" content="Fagner Lima - Software Engineer Full Stack">
-  <title>Fagner Lima</title>
-  <link rel="stylesheet" href="public/css/styles.css">
-  <link rel="stylesheet" href="public/css/root.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <link rel="icon" href="public/icons/android-chrome-512x512.png">
-  <meta name="theme-color" content="#151320">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-  <script>
-
-    $(function () {
-      $('#nav').load("/web/nav.html");
-      $('#footer').load("/web/footer.html");
-    });
-
-  </script>
+  <title>Space Around</title>
 </head>
 
+<style>
+  body { background-color: hsl(256, 100%, 5%); font: 30px sans-serif; }
+canvas { position: absolute; }
+</style>
 <body>
+  <canvas id='c'></canvas>
+  <script>
+    var PARTICLE_NUM = 500;
+    var PARTICLE_BASE_RADIUS = 0.5;
+    var FL = 500;
+    var DEFAULT_SPEED = 2;
+    var BOOST_SPEED = 300;
 
-  <!-- Botões de navegação no topo da página -->
-  <nav>
-    <div id="nav"></div>
-  </nav>
+    var canvas;
+    var canvasWidth, canvasHeight;
+    var context;
+    var centerX, centerY;
+    var mouseX, mouseY;
+    var speed = DEFAULT_SPEED;
+    var targetSpeed = DEFAULT_SPEED;
+    var particles = [];
+
+    window.addEventListener('load', function () {
+      canvas = document.getElementById('c');
+
+      var resize = function () {
+        canvasWidth = canvas.width = window.innerWidth;
+        canvasHeight = canvas.height = window.innerHeight;
+        centerX = canvasWidth * 0.5;
+        centerY = canvasHeight * 0.5;
+        context = canvas.getContext('2d');
+        context.fillStyle = 'rgb(255, 255, 255)';
+      };
+
+      document.addEventListener('resize', resize);
+      resize();
+
+      mouseX = centerX;
+      mouseY = centerY;
+
+      for (var i = 0, p; i < PARTICLE_NUM; i++) {
+        particles[i] = randomizeParticle(new Particle());
+        particles[i].z -= 500 * Math.random();
+      }
+
+      document.addEventListener('mousemove', function (e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      }, false);
+
+      document.addEventListener('mousedown', function (e) {
+        targetSpeed = BOOST_SPEED;
+      }, false);
+
+      document.addEventListener('mouseup', function (d) {
+        targetSpeed = DEFAULT_SPEED;
+      }, false);
+
+      setInterval(loop, 1000 / 60);
+    }, false);
+
+    function loop() {
+      context.save();
+      context.fillStyle = 'rgb(0, 0, 0)';
+      context.fillRect(0, 0, canvasWidth, canvasHeight);
+      context.restore();
+
+      speed += (targetSpeed - speed) * 0.01;
+
+      var p;
+      var cx, cy;
+      var rx, ry;
+      var f, x, y, r;
+      var pf, px, py, pr;
+      var a, a1, a2;
+
+      var halfPi = Math.PI * 0.5;
+      var atan2 = Math.atan2;
+      var cos = Math.cos;
+      var sin = Math.sin;
+
+      context.beginPath();
+      for (var i = 0; i < PARTICLE_NUM; i++) {
+        p = particles[i];
+
+        p.pastZ = p.z;
+        p.z -= speed;
+
+        if (p.z <= 0) {
+          randomizeParticle(p);
+          continue;
+        }
+
+        cx = centerX - (mouseX - centerX) * 1.25;
+        cy = centerY - (mouseY - centerY) * 1.25;
+
+        rx = p.x - cx;
+        ry = p.y - cy;
+
+        f = FL / p.z;
+        x = cx + rx * f;
+        y = cy + ry * f;
+        r = PARTICLE_BASE_RADIUS * f;
+
+        pf = FL / p.pastZ;
+        px = cx + rx * pf;
+        py = cy + ry * pf;
+        pr = PARTICLE_BASE_RADIUS * pf;
+
+        a = atan2(py - y, px - x);
+        a1 = a + halfPi;
+        a2 = a - halfPi;
+
+        context.moveTo(px + pr * cos(a1), py + pr * sin(a1));
+        context.arc(px, py, pr, a1, a2, true);
+        context.lineTo(x + r * cos(a2), y + r * sin(a2));
+        context.arc(x, y, r, a2, a1, true);
+        context.closePath();
+      }
+      context.fill();
+    }
+
+    function randomizeParticle(p) {
+      p.x = Math.random() * canvasWidth;
+      p.y = Math.random() * canvasHeight;
+      p.z = Math.random() * 1500 + 500;
+      return p;
+    }
 
 
-  <div class="body">
-    <section>
-      <div class="avt">
-        <img alt="fagnerLima" src="/public/img/Nagref2.0.png">
-      </div>
-      <div class="stack">
-        <h1>Engenheiro de Software FreeLancer Full-Stack.</h1>
-        <h2>
-          <br>
-          <p>
-          <strong>Minhas Stacks:</strong><br>
-            <img align="center" alt="Nagref-HTML"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-            <img align="center" alt="Nagref-CSS"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-            <img align="center" alt="Nagref-Js"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-            <img align="center" alt="Nagref-React"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-            <img align="center" alt="Nagref-NodeJS"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
-            <img align="center" alt="Nagref-Go"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg">
-          </p>
-      </div>
-      </h2><br>
+    /**
+     * Particle
+     */
+    function Particle(x, y, z) {
+      this.x = x || 0;
+      this.y = y || 0;
+      this.z = z || 0;
+      this.pastZ = 0;
+    }
 
-      <div class="about">
-        <h2>
-          <strong>Olá, eu me chamo Fagner Lima.</strong><br>
-          <p>
-            Sou Engenheiro de Software,
-            Pós-Graduado em
-            Gestão na Cibersegurança Empresarial,
-            voluntariado na comunidade NodeBR e FreeLancer Full-Stack
-            apaixonado por resolver problemas
-            usando programação,
-            acabei fazendo da tecnologia
-            uma inspiração para a profissão.</p>
-          <p>
-            Eu me considero ágil,
-            responsável, trabalhador,
-            muito positivo e bem humorado.
-            Sempre aprendendo, gosto de estar sempre por
-            dentro de todas as inovações tecnológicas,
-            gosto de trabalho em equipe e desafios.</p>
-          <p>
-            Pretendo evoluir mais a cada dia
-            como desenvolvedor e gosto
-            de ajudar a fazer pessoas desenvolvedoras.<br>
-            Nascido no Rio de Janeiro, Brasil.</p>
-
-
-          <p>
-            <br>
-            <strong>Meus Valores:</strong><br>
-            🧠 Desenvolvimento cuidadoso<br>
-            😇 Leal e Responsável<br>
-            💬 Trabalho em equipe e comunicação<br>
-            🔮 Mentalidade de Aprendizagem<br>
-          </p>
-          <br>
-          <p>
-            <strong>Hobbies:</strong><br>
-            🎸 Guitarrista<br>
-            ☕ Barista - Coffee<br>
-            🏃 Maratonista Iniciante
-          </p>
-        </h2>
-
-    </section>
-    <br>
-  </div>
-  </div>
-
-  <footer>
-    <!-- Botões de links do fundo da página -->
-    <div id="footer"></div>
-  </footer>
+  </script>
 </body>
 
 </html>
