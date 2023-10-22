@@ -7,9 +7,26 @@
   <title>Nagref Developer Ltda</title>
 </head>
 <style>
+  :root {
+    --background: #151320;
+    --comment: #7970A9;
+    --comment-secondary: #454158;
+    --selection: #414D58;
+    --selection-secondary: #8f9ba8;
+    --black: #0B0D0F;
+    --foreground: #F8F8F2;
+    --cyan: #80FFEA;
+    --green: #8AFF80;
+    --orange: #FFCA80;
+    --yellow: #FFFF80;
+    --red: #FF9580;
+    --pink: #FF80BF;
+    --purple: #9580FF;
+  }
+
   body {
-    background-color: black;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #151320;
+    font-family: "JetBrains Mono", Helvetica, Arial, sans-serif;
     font-weight: 500;
     display: flex;
     flex-direction: column;
@@ -19,7 +36,7 @@
   }
 
   .title {
-    color: mintcream;
+    color: var(--foreground);
     text-transform: uppercase;
     margin-top: 3em;
     margin-bottom: 3em;
@@ -75,53 +92,53 @@
   }
 
   .pinky {
-    background-color: crimson;
-    border: 2px solid crimson;
+    background-color: var(--red);
+    border: 2px solid var(--red);
   }
 
   .pinky.selected {
-    color: crimson;
+    color: var(--red);
   }
 
   .ring {
-    background-color: coral;
-    border: 2px solid coral;
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
   }
 
   .ring.selected {
-    color: coral;
+    color: var(--yellow);
   }
 
   .middle {
-    background-color: darkorange;
-    border: 2px solid darkorange;
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
   }
 
   .middle.selected {
-    color: darkorange;
+    color: var(--orange);
   }
 
   .pointer1st {
-    background-color: gold;
-    border: 2px solid gold;
+    background-color: var(--cyan);
+    border: 2px solid var(--cyan);
   }
 
   .pointer1st.selected {
-    color: gold;
+    color: var(--cyan);
   }
 
   .pointer2nd {
-    background-color: khaki;
-    border: 2px solid khaki;
+    background-color: var(--purple);
+    border: 2px solid var(--purple);
   }
 
   .pointer2nd.selected {
-    color: khaki;
+    color: var(--purple);
   }
 
   .fill-out-key {
-    background-color: slategrey;
-    border: 2px solid slategrey;
+    background-color: var(--comment-secondary);
+    border: 2px solid var(--comment-secondary);
   }
 
   .selected {
@@ -225,7 +242,7 @@
 </style>
 
 <body>
-  <h1 class="title">Eyes on the screen</h1>
+  <h1 class="title">Olhos na tela.</h1>
   <div class="keyboard">
     <ul class="row row-0">
       <li class="pinky" id="esc">ESC</li>
@@ -289,7 +306,7 @@
       <li class="pinky" id="right-shift">SHIFT</li>
     </ul>
   </div>
-  <h1 class="title">Hands on the keyboard</h1>
+  <h1 class="title">Mãos no teclado.</h1>
   <script>
     const keys = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 
